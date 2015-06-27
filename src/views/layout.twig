@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+    {% block head %}
+        <meta charset="utf-8">
+        <meta name="description" content="Oficjalna strona Krakowskiej Legii Akademickiej">
+        <title>Krakowska Legia Akademicka - {% block title %}{% endblock %}</title>
+
+        <link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/styles/style.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Sans|PT+Sans" rel="stylesheet" type='text/css'>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+    {% endblock %}
+    </head>
+    <body>
+
+        <header>
+            <a href="{{ app.request.basepath }}/home/">
+                <img src="{{ app.request.basepath }}/media/layout/herb.jpg" alt="Herb Krakowskiej Legii Akademickiej przedstawiające herb Miasta Krakowa, uniwersytecki bieret oraz szarego wilka na czarnym tle." class="logo" />
+                <h1 class="logo"> Krakowska Legia Akademicka </h1>
+            </a>
+
+            <div class="soon border">
+            {% block soon %}
+                <p> Najbliższe szkolenie<br/>
+                    nazwa: <strong>nurkowe</strong><br/>
+                    data: <strong>2.07</strong>
+                </p>
+            {% endblock %}
+            </div>
+            <div class="clear"></div>
+
+            <nav class="menu Tborder Bborder">
+                <ul>
+                    <li> <a href="{{ url('/') }}" title="Home site">Strona główna</a></li>
+                    <li> <a href="{{ url('/warto/') }}" title="Dlaczego warto?">Dlaczego warto?</a></li>
+                    <li> <a href="{{ url('/dolacz/') }}" title="Dołącz do KLA">Dołącz</a></li>
+                    <li> <a href="{{ url('/dzialalnosc/') }}" title="Działalność">Działalność</a> </li>
+                    <li> <a href="{{ url('/wydarzenia/') }}" title="Wydarzenia">Wydarzenia</a></li>
+                    <li> <a href="{{ url('/zalozyciele/') }}" title="Założyciele">Założyciele</a></li>
+                    <li> <a href="{{ url('/historia/') }}" title="Historia KLA">Historia</a></li>
+                    <li> <a href="{{ url('/galeria/') }}" title="Galeria">Galeria</a></li>
+                    <li> <a href="{{ url('/quiz/') }}" title="Quiz">Quiz</a></li>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+
+
+            {% block content %}{% endblock %}
+
+
+
+            <div class="clear"></div>
+        </div>
+
+        {% include "footer.twig" %}
+
+        <script type="text/javascript" src="{{ app.request.basepath }}/styles/script.js"></script>
+    </body>
+</html>

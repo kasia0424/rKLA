@@ -1,0 +1,56 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Dołącz do nas{% endblock %}
+
+{% block content %}
+            <div class="clear"></div>
+        </header><!-- header end -->
+
+
+        <div class="content dolacz">
+            <article class="form">
+                <h1>Dołącz do Krakowskiej Legii Akademickiej!</h1>
+                <p>Wystarczy spełnić trzy formalności:
+                    <ol>
+                        <li>Zapoznaj się ze statutem organizacji:<br/>
+                            <a href="files/Statut_KLA.pdf" download="Statut_KLA.pdf" class="statut button">Statut w pdf</a></li>
+                        <li>Wpłać wpisowe w wysokości 45 zł na konto skarbnika KLA:
+                            <ul>
+                                <li>nr konta: 18 1090 1665 0000 0001 2184 8089</li>
+                                <li>tytuł: podaj swoje imię i nazwisko</li>
+                                <li>prześlij nam potwierdzenie wpłaty/przelewu:<br/>
+                                    <form action="mailto:kasia0424@o2.pl" method="post">
+                                        <input type="file" name="confirmation">
+                                        <input type="submit" name="Prześlij">
+                                    </form></li>
+                            </ul>
+                        </li>
+                        
+                        <li>Przyjdź i zapisz się do drużyny 
+                            <ul>
+                                <li>ul. Podchorążych 2, pok. 425</li>
+                                <li>wtorek 12:45 – 14:15</li>
+                                <li>środa 17:30 – 18:30</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </p>
+                <a href="{{ url('/quiz/') }}" class="button side">Sprawdź do jakiej drużyny pasujesz!</a>
+                
+                <!-- <div class="clear"></div> -->
+            </article>
+
+            <article class="right">
+                <h1 class="hidden">Dane teleadresowe:</h1>
+                <div id="map-canvas" class="map"></div>
+                
+                <section>
+                    <h1><strong>Krakowska Legia Akademicka</strong></h1>
+                    <p>ul. Podchorążych 2, <strong>pok. 425</strong><br/>
+                    30-084 Kraków
+                    </p>
+                </section>
+            </article>
+            
+            
+{% endblock %}

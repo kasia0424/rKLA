@@ -1,0 +1,81 @@
+{% block aside %}
+<aside>
+    <section class="thubmails Bborder">
+        <h1>Ostatnie zdjęcia:</h1>
+        {%  if lasts|length > 0 %}
+            {% for photo in lasts %}
+                <img class="border lightbox_trigger" src="{{ app.request.basepath }}/media/post/{{ photo.name }}.jpg" alt="{{ photo.description }}" />
+            {% endfor %}
+        {% else %}
+            <p>
+                Niedługo wrzucimy zdjęcia z wydarzeń.
+            </p>
+        {% endif %}
+    </section>
+
+    <section class="Bborder">
+        <h1> Współpraca </h1>
+        <article class="coworkers">
+            <section>
+                <img src="{{ app.request.basepath }}/media/layout/logo_PTG.jpg" alt="Bialo czerwone logo Polskiego towarzystwa Geopolitycznego - ze szkieletem w kształcie globusu" />
+                <h2> <a href="http://ptg.edu.pl" target="_blank">Polskie Towarzystwo Geopolityczne</a></h2>
+            </section>
+            <section>
+                <img src="{{ app.request.basepath }}/media/layout/logo_NEST.jpg" alt="Bialy wilk ziejący ogniem w biało-czerwonym okręgu" />
+                <h2> <a href="http://n-e-s-t.wix.com/team" target="_blank"> N.E.S.T.</a></h2>                   
+            </section>
+            <section>
+                <img src="{{ app.request.basepath }}/media/layout/logo_ON.jpg" alt="Logo Ruchu na Rzecz Obrony Terytorialnej - czarno-zielono-brązowe literki w obrysem Polski" />
+                <h2> <a href="http://www.obronanarodowa.pl/" target="_blank">Ruch na Rzecz Obrony Terytorialnej „Obrona Narodowa"</a> </h2>                 
+            </section>
+            <section>
+                <img src="{{ app.request.basepath }}/media/layout/logo_AON.jpg" alt="szaro-żółty rysunek orła w koronie otoczonego wieńcem" />
+                <h2> <a href="http://www.aon.edu.pl/biuro-inicjatyw-obronnych/" target="_blank">Biuro Inicjatyw Obronnych AON</a> </h2> 
+            </section>
+        </article>
+    </section>
+
+    <section class="Bborder">
+        <article class="web">
+            <h1>Artykuly o obronnosci </h1>
+            <section>
+                <!-- <h2> NAGłÓWEK </h2> -->
+                <p> Wojsko zauważyło potencjał tkwiący w organizacjach paramilitarnych i klasach mundurowych. Chce ich włączenia w system szkoleń rezerwistów.</p>
+                <a target="_blank" href="http://wpolityce.pl/spoleczenstwo/216982-wojsko-zauwazylo-potencjal-tkwiacy-w-organizacjach-paramilitarnych-i-klasach-mundurowych-chce-ich-wlaczenia-w-system-szkolen-rezerwistow" class="more"> Więcej </a>
+            </section>
+            <section>
+                <h2>Polskie firmy gotowe na wojnę: </h2>
+                <p> Nawet 100 tys. polskich firm jest gotowych stworzyć organizację paramilitarną.</p>
+                <a target="_blank" href="http://www.biztok.pl/biznes/polskie-firmy-gotowe-na-wojne-chca-wystawic-polmilionowa-armie_a17816" class="more"> Więcej </a>
+            </section>
+            <section>
+                <h2> Polskie miasto tworzy własną, lokalną armię. Wzorują się na AK: </h2>
+                <p> W Świdniku powstanie pierwszy w Polsce SPON czyli Strzelecki Pododdział Obrony Narodowej. W jego szeregach znajdą się przeszkoleni ochotnicy.</p>
+                <a target="_blank" href="http://wpolityce.pl/spoleczenstwo/215335-polskie-miasto-tworzy-wlasna-lokalna-armie-wzoruja-sie-na-ak" class="more"> Więcej </a>
+            </section>
+            <section>
+                <h2> Szeremietiew: Rosja może napaść na Polskę. „Sądzę, że dojdzie do wybuchu wojny”: </h2>
+                <p> Były p.o. ministra obrony narodowej Romuald Szeremietiew podkreśla, że nie można wykluczyć agresji Rosji na Polskę.</p>
+                <a target="_blank" href="http://wpolityce.pl/swiat/233834-szeremietiew-rosja-moze-napasc-na-polske-sadze-ze-dojdzie-do-wybuchu-wojny#" class="more"> Więcej </a>
+            </section>
+            <section>
+                <h2> Polsko, ocknij się! Łotysze, Estończycy i Litwini przygotowują się do obrony. Tylko Polacy żyją w jakimś matriksie: </h2>
+                <p> Ministerstwo Obrony Narodowej straciło łączność internetową – to pewne, czy telefoniczną również - nie wiem. Wystarczyło podpalić most, jak podały wczoraj media w kilku miejscach aby sparaliżować MON.</p>
+                <a target="_blank" href="http://wpolityce.pl/polityka/234108-polsko-ocknij-sie-lotysze-estonczycy-i-litwini-przygotowuja-sie-do-obrony-tylko-polacy-zyja-w-jakims-matriksie" class="more"> Więcej </a>
+            </section>
+        </article>
+    </section>
+
+    {# <section class="Bborder">
+        <h1> Zobacz nas na facebooku:</h1>
+        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-height="200" data-width="200" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/facebook">
+                    <a href="https://www.facebook.com/facebook">Facebook</a>
+                </blockquote>
+            </div>
+        </div>
+    </section> #}
+
+</aside>
+{% endblock %}

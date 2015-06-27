@@ -1,0 +1,73 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Założyciele{% endblock %}
+
+{% block content %}
+
+    <div class="clear"></div>
+</header><!-- header end -->
+
+
+<div class="content zalozyciele">
+            <article>
+                <section class="old">
+                    <div class="wide"><h1>1918</h1></div>
+
+                    <figure class="photo_desc">
+                        <img src="{{ app.request.basepath }}/media/layout/Miller.jpg" alt="czarno biale zdjęcie gen. Stanisława Millera" class=/>
+                        <figcaption>
+                            <h2> gen. Stanisław Miller</h2>
+                            <p class="hidden">Pierwszy dowódca KLA. Został nim jako młody porucznik, który poprowadził ekipę studentów i zdobył dwa austro-węgierskie pociągi pancerne. Dowodził Legią w czasie wojny polsko-ukraińskiej w latach 1918-19.</p>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="right photo_desc">
+                        <img src="{{ app.request.basepath }}/media/layout/Pilsudski.jpg" alt="czarno-białe zdjęcie Józefa Pilsudskiego obróconego profilem" />
+                        <figcaption>
+                            <h2> marsz. Józef Piłsudski</h2>
+                            <p class="hidden long"> Rozkazem z dn. 11 listopada 1918 roku powołał do życia Krakowską Legię Akademicką. Jej zadaniem było szkolenie wojskowe i przysposobienie obronne studentów. Wkrótce dzięki marsz. Piłsudskiemu powstały Legie Akademickie również w innych miastach.</p>
+                        </figcaption>
+                    </figure>
+                    <div class="clear"></div>
+
+                    <figure class="old">
+                        <img src="{{ app.request.basepath }}/media/layout/legia_old.jpg" alt="zdjęcie Legii Akademickiej powstalej w roku 1918" />
+                        <figcaption>
+                            Legia Akademicka - rok 1918
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section class="wspolczesnie">
+                    <div class="wide"><h1>2013</h1></div>
+                    <article class="photo_desc">
+                        <img src="{{ app.request.basepath }}/media/layout/Wilczynski.jpg" alt="zdjęcie Piotra Wilczyńskiego w garniturze na tle zieleni" />
+                        <figcaption>
+                            <h2>dr Piotr L. Wilczyński</h2>
+                            <p class="hidden middle">Reaktywował działalność KLA w 2013 roku organizując studentów, którym odebrano ustawową możliwość odbycia służby wojskowej.</p>
+                        </figcaption>
+                    </article>
+                    <figure>
+                        <img src="{{ app.request.basepath }}/media/layout/legia_new.jpg" alt="kolorowe zdjęcie uzbrojonych legionistów w ciemnych ubraniach" />
+                        <figcaption>
+                            Legia Akademicka - rok 2013
+                        </figcaption>
+                    </figure>
+<div class="clear"></div>
+                </section>
+                
+                
+                <section class="wspolczesnie Tborder">
+                    <h1>Historia Legii</h1>
+                    <p>
+                        Krakowska Legia Akademicka to organizacja, która figurowała w rejestrze jednostek wojskowych już w listopadzie 1918 roku. Służyli w niej studenci zmobilizowani do walk o granice powstającej Polski. <stong>Piękną kartę bojową</strong> Legia Akademicka zapisała podczas walk o odbicie Przemyśla z rąk Ukraińców i później w 1919 roku w obronie Lwowa. Sławę bojową „akademicy” zdobyli też walcząc w składzie etatowych załóg bojowych pociągów pancernych „Śmiały” oraz „Smok”.<br/>
+                        W roku 1926 Krakowska Legia Akademicka uzyskała formalny status stowarzyszenia i została otoczona mecenatem przez Ministerstwo Przysposobienia Wojskowego. Pod to ministerstwo podlegały wszystkie Legie Akademickie, Strzelcy, harcerze i POW.<br/>
+                        Warto wspomnieć, że w okresie międzywojennym działały Legie we wszystkich miastach akademickich.<br/>
+                        Struktury Legii Akademickiej okresu międzywojennego nie miały centralnego dowództwa. Ministerstwo PW objęło je mecenatem i traktowało jako kuźnię przyszłych kadr technicznych i dowódczych dla modernizującego się od początku lat trzydziestych Wojska Polskiego. Dodatkowo działalność Legii była bardzo istotnym elementem szkolenia rezerw kadrowych na potrzeby mobilizacyjne i wojenne armii.
+                    </p>
+                </section>
+            </article>
+
+
+
+{% endblock %}

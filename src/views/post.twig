@@ -1,0 +1,75 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Aktualności{% endblock %}
+
+{% block content %}
+<div class="content single">
+    <article class="wpis">
+        <h1>Szkolenie unitarne</h1>
+        <span datetime="2015-05-03" class="date">3.05.2015</span>
+        {%  if photos|length > 0 %}
+            <div class="slide-wrapperr">
+                <div class="btn">
+                    {% for photo in photos %}
+                        <img src="{{ app.request.basepath }}/media/post/{{ photo.name }}.jpg" alt="{{ photo.description }}"  class="thumbnail"/>
+                        {#<img src="{{ app.request.basepath }}/media/post/legia_new.jpg" alt="gory w chmurach" class="thumbnail"/>
+                        <img src="{{ app.request.basepath }}/media/post/road.jpg" alt="zbocze gory w chmurach" class="thumbnail"/>
+                        <img src="{{ app.request.basepath }}/media/post/sea.jpg" alt="chmurach" class="thumbnail"/>
+                        #}
+                    {% endfor %}
+                </div>
+            
+                <figure class="active thumb">
+                    <img src="{{ app.request.basepath }}/media/post/11188396_451791631647391_2033524889460385290_n.jpg" alt="zdjęcie miasta z lotu ptaka" />
+                <div class="clear"></div>
+                </figure>
+
+                <div class="clear"></div>
+            </div>
+         {% endif %}
+        <div class="clear"></div>
+        
+
+        <p>
+            Ostatni dzień szkolenia unitarnego w tym roku był bardzo ciepły, ale nie dla wszystkich. Legioniści rozpoczęli zajęcia o 3 w nocy, gdy na polach lśnił w pełni księżyca śnieg. Po ćwiczeniu gotowości bojowej, która unaoczniła uczestnikom ich braki, kontynuowano szkolenie umiejętności bojowych: posługiwania się granatami ręcznymi, wykonywania okopów i korzystania z różnego innego sprzętu. Po szkoleniach odbyła się uroczysta przysięga wojskowa dla rekrutów poprzedzona udziałem we mszy świętej za ojczyznę.
+        </p>
+        <ul>
+        {% for photo in photos %}
+            <li> {{ photo.description }}</li>
+        {% endfor %}
+        <li>
+            Ćwiczenia z budowy i działania granatów ręcznych uzupełnione były o techniczne szkolenie z rzutu granatem na odległość i rzutu precyzyjnego.
+        </li>
+        <li>
+            Po szkoleniu z granatami przyszła kolej na wykonywanie okopiw indywidualnych. Najsprawniej poszło to leg. Jackowi Opiekunowi.
+        </li>
+        <li>
+            Dalsza część dnia poświęcona została omówieniu zasad korespondencji radiowej i łączności a następnie zasad postępowania w przypadku użycia broni ABC. Na zdjęciu wyjaśnienia udziela legionistom - leg. mgr inż. Tomasz Mróz.
+        </li>
+        <li>
+            Legioniści musieli się pomęczyć z kombinezonami OP-1 i maskami przeciwgazowymi.
+        </li>
+        <li>
+            Jak się oddycha w maskach p-gaz. przekonali się rekruci w trakcie forsownego biegu.
+        </li>
+        <li>
+            Po obiedzie legioniści mieli za zadanie zdać egzaminy z wiedzy teoretycznej przedstawianej na ogniskach w dniach poprzednich, oraz wymaszerowali do pobliskiego kościoła na mszę świętą za ojczyznę.
+        </li>
+        <li>
+            Uroczysta przysięga dla nowych rekrutów zakończyła tegoroczne szkolenie unitarne.
+        </li>
+        <li>
+            Po złożeniu przysięgi i pasowaniu nowi legioniści otrzymali naszywki KLA
+        </li>
+        <li>
+            Pasowanie odbyło się tradycyjnie, tak jak przed wojną.
+        </li>
+        <li>
+            Na szkoleniu komendat złożył legionistom gratulacje, a najlepiej sprawdzających się awansował oraz mianował dowódcami drużyn.
+        </li>
+        </ul>
+        <div class="clear"></div>
+    </article>
+
+
+{% endblock %}

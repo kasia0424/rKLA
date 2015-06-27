@@ -1,0 +1,51 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Galeria{% endblock %}
+
+{% block content %}
+
+    <div class="clear"></div>
+</header><!-- header end -->
+
+
+<div class="content galeria">
+    <article>
+        <h1> Galeria </h1>
+        {%  if photos|length > 0 %}
+            {% for photo in photos %}
+                <div>
+                    <img class="lightbox_trigger" src="{{ app.request.basepath }}/media/post/{{ photo.name }}.jpg" alt="zdjęcie"/>
+                    <p class="hidden"> {{ photo.description }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>
+                Niedługo wrzucimy zdjęcia z wydarzeń.
+            </p>
+        {% endif %}
+
+        {#<img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="{{ app.request.basepath }}/media/post/#.jpg" alt="zdjęcie"/>
+        <img src="" alt="zdjęcie"/>
+        <img src="" alt="zdjęcie"/>
+        <img src="" alt="zdjęcie"/>
+        <img src="" alt="zdjęcie"/>
+        <img src="" alt="zdjęcie"/>
+        <img src="" alt="zdjęcie"/>#}
+        <img src="" alt="zdjęcie"/>
+        
+        <div class="clear"></div>
+    </article>
+<div class="clear"></div>
+
+{% endblock %}

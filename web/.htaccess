@@ -1,0 +1,12 @@
+AddCharset UTF-8 .twig
+<Files "home.twig">
+ForceType 'text/html; charset=UTF-8'
+</Files>
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+    RewriteEngine On
+    RewriteBase /~12_sipel/KLA/
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ web/index.php [QSA,L]
+</IfModule>

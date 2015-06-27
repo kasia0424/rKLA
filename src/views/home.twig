@@ -1,0 +1,126 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Strona główna{% endblock %}
+
+{% block content %}
+            <div class="slide-wrapper">
+                <article class="active slide" id="1">
+                    <img src="{{ app.request.basepath }}/media/front.jpg" alt="brązowe zbocze gory w chmurach"/>
+                    <h1>Donec interdum ullamcorper dictum</h1>
+                    <p> text text text text text text</p>
+                    <div class="clear"></div>
+                </article>
+
+                <article class="slide" id="2">
+                    <img src="{{ app.request.basepath }}/media/layout/legia_new.jpg" alt="gory w chmurach"/>
+                    <h1>Donec interdum ullamcorper dictum</h1>
+                    <p> text text text text text text</p>
+                    <div class="clear"></div>
+                </article>
+
+                <article class="slide" id="3">
+                    <img src="{{ app.request.basepath }}/media/post/11050658_457583737734847_2911962992658096170_n.jpg" alt="zbocze gory w chmurach"/>
+                    <h1>Donec interdum ullamcorper dictum</h1>
+                    <p> text text text text text text</p>
+                    <div class="clear"></div>
+                </article>
+
+                <article class="slide" id ="4">
+                    <img src="{{ app.request.basepath }}/media/post/7745_192032360956654_357023624_n.jpg" alt="chmurach"/>
+                    <h1>Donec interdum ullamcorper dictum</h1>
+                    <p> text text text text text text</p>
+                    <div class="clear"></div>
+                </article>
+                <!-- <div class="clear"></div> -->
+            </div>
+            <div class="btn" id ="dots">
+                <div class="dot dot-active" id="1"> &bull;</div>
+                <div class="dot" id="2"> &bull;</div>
+                <div class="dot" id="3"> &bull;</div>
+                <div class="dot" id="4"> &bull;</div>
+                {#<img src="{{ app.request.basepath }}/media/layout/dot-icons.png" alt="black dots" id="dots" />
+                #}
+            </div><!-- slide nav buttons -->
+
+            <div class="clear"></div>
+        </header>
+
+
+        <div class="content Tborder">
+            <section class="main Rborder">
+                <h1> Aktualności </h1>
+                
+                {%  if posts|length > 0 %}
+                    {# {% for post in posts %} #}
+                    <article class="aktualnosci Bborder">
+                        <a href="{{ url('/home/post', {'id': posts.id} ) }}" class="post">
+                            <img class="border" src="{{ app.request.basepath }}/media/post/{{ posts.photo }}.jpg" alt="zdjęcie miasta z lotu ptaka" />
+                            <p>{{ posts.date }}</p>
+                            <h1>{{ posts.title }}</h1>
+                            <p class="float_text">
+                                {{ posts.content }}
+                            </p>
+                            <div class="clear"></div>
+                        </a>
+                    </article>
+                    {#
+                    {% endfor %}
+                    #}
+                {% else %}
+                    <p>
+                        Niedługo wrzucimy relacje z wydarzeń.
+                    </p>
+                {% endif %}
+                    
+                    
+                {#<article class="aktualnosci Bborder">
+                    <a href="{{ url('/home/post/1') }}" class="post">
+                        <img class="border" src="{{ app.request.basepath }}/media/post/11094290_451791754980712_1816145686517115286_n.jpg" alt="zdjęcie miasta z lotu ptaka" />
+                        <p>3.05.2015</p>
+                        <h1>Szkolenie unitare</h1>
+                        <p class="float_text">
+                            Ostatni dzień szkolenia unitarnego w tym roku był bardzo ciepły, ale nie dla wszystkich. Legioniści rozpoczęli zajęcia o 3 w nocy, gdy na polach lśnił w pełni księżyca śnieg. Po ćwiczeniu gotowości bojowej, która unaoczniła uczestnikom ich braki, kontynuowano szkolenie umiejętności bojowych: posługiwania się granatami ręcznymi, wykonywania okopów i korzystania z różnego innego sprzętu. Po szkoleniach odbyła się uroczysta przysięga wojskowa dla rekrutów poprzedzona udziałem we mszy świętej za ojczyznę.
+                        </p>
+                        <div class="clear"></div>
+                    </a>
+                </article>#}
+                
+
+                <article class="aktualnosci Bborder">
+                    <a href="wpis.html" class="post">
+                        <img class="border" src="{{ app.request.basepath }}/media/news/.jpg" alt="zdjęcie silnika lecącego samolotu" />
+                        <p>16.09.2014</p>
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p class="float_text">Lorem ipsum dolor sit amet text text text<br />
+                            text text text text<br/>
+                            text text text text text text text text
+                        
+                            <!-- <a href="#" class="more">Czytaj więcej</a> -->
+                        </p>
+                        <div class="clear"></div>
+                    </a>
+                </article>
+
+
+                <article class="aktualnosci Bborder">
+                    <a href="wpis.html" class="post">
+                        <img src="{{ app.request.basepath }}/media/news/.jpg" alt="zdjęcie silnika lecącego samolotu" />
+                        <p>16.09.2014</p>
+                        <h1>Lorem ipsum dolor sit amet</h1>
+                        <p class="float_text">Lorem ipsum dolor sit amet text text text<br />
+                            text text text text<br/>
+                            text text text text text text text text
+                        
+                            <!-- <a href="#" class="more">Czytaj więcej</a> -->
+                        </p>
+                        <div class="clear"></div>
+                    </a>
+                </article>
+
+
+                {#<a href="aktualnosci.html" class="big_button">Zobacz więcej</a>#}
+            </section>
+
+
+            {% include 'aside.twig' %}
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Szkolenia{% endblock %}
+
+{% block content %}
+
+    <div class="clear"></div>
+</header><!-- header end -->
+
+
+<div class="content szkolenia">
+    <article>
+        <h1> Wydarzenia w 2015 r.</h1>
+        {%  if events|length > 0 %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Temat</th>
+                    <th>Rodzaj</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for event in events %}
+                <tr>
+                    <td>{{ event.date|e }}</td>
+                    <td>{{ event.name|e }}</td>
+                    <td>{{ event.type|e }}</td>
+                </tr>
+            {% endfor %}
+                <tr>
+                    <td>7 III</td><td>inauguracja sezonu – nocna taktyka</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>8 III</td><td>szkolenie z profilowania kryminologicznego </td><td>szkolenie</td>
+                </tr>
+                <tr>
+                    <td>15 III</td><td>warsztaty z budowy, utrzymania i konserwacji broni - inaczej warsztaty rusznikarskie w LOK</td><td>warsztaty</td>
+                </tr>
+                <tr>
+                    <td>21 III</td><td>warsztaty pirotechniczne</td><td>warsztaty</td>
+                </tr>
+                <tr>
+                    <td>28 III</td><td>warsztaty łuczniczo-kusznicze </td><td>warsztaty</td>
+                </tr>
+                <tr>
+                    <td>29 III</td><td>bezpłatna konferencja Polskiego Towarzystwa Geopolitycznego - Islam we współczesnym świecie, m.in. o taktyce mudżahedinów.</td><td>konferencja</td>
+                </tr>
+                <tr>
+                    <td>4 IV</td><td>mini selekcja do jednostek specjalnych, z dużo obniżonymi wymogami, warto się sprawdzić.</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>11-12 IV</td><td>szkolenie biznesowo-kadrowe dla członków KLA w Zakopanym</td><td>szkolenie</td>
+                </tr>
+                <tr>
+                    <td>19 IV</td><td>szkolenie strzeleckie stacjonarne (I i II etap)</td><td>szkolenie</td>
+                </tr>
+                <tr>
+                    <td>25 IV</td><td>podstawy ratownictwa taktycznego</td><td>szkolenie</td>
+                </tr>
+                <tr>
+                    <td>25-26 IV</td><td>ćwiczenia z zielonej taktyki</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>1-3 V</td><td>szkolenie unitarne - obowiązkowe dla wszystkich członków jednostki</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>9-10 V</td><td>szkolenie powietrzno-desantowe</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>16 V</td><td>szkolenie z prowadzenia samochodów terenowych i quadów w warunkach trudnych</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>23 V</td><td>ćwiczenia walki bronią białą przy użyciu bagnetów i innych przedmiotów podręcznych</td><td>szkolenie</td>
+                </tr>
+                <tr>
+                    <td>6-7 VI</td><td>kurs nurkowy połączony z taktyką wodnodesantową</td><td>szkolenie</td>
+                </tr>
+                <tr>
+                    <td>2-5 VII</td><td>Combat Alert, poligon </td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>1-9 VIII</td><td>poligon wojsk pancernych, Żagań</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>26-27 IX</td><td>szkolenie survivalowe, Pustynia Błędowska</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>17 X</td><td>szkolenie z procedur obronnych OCOKA</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>31 X</td><td>szkolenie strzeleckie (I i II etap)</td><td>szkolenie</td>
+                </tr>
+                <tr>
+                    <td>1 XI</td><td>szkolenie strzeleckie (strzelanie dynamiczne)</td><td>szkolenie</td>
+                </tr>
+                <tr>
+                    <td>11 XI</td><td>szkolenie wysokogórskie</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>14-15 XI</td><td>szkolenie czarnej taktyki</td><td>poligon</td>
+                </tr>
+                <tr>
+                    <td>5 XII</td><td>szkolenie ze służby wartowniczej</td><td>poligon</td>
+                </tr>
+            </tbody>
+        </table>
+        {% else %}
+            <p>
+                Nie ma jeszcze planu wydarzeń.
+            </p>
+        {% endif %}
+    </article>
+
+
+{% endblock %}
