@@ -159,8 +159,10 @@ function lightbox (){
             '<div id="lightbox" class="hidden">' +
                 '<p>Zamknij</p>' +
                 '<div id="photo">' +
-                    '<img src="' + $image_href +'" />' +
-                '</div>' +  
+                    '<img class="view" src="' + $image_href +'" />' +
+                    
+                '</div>' +
+                '<img class="btn next" src="../media/layout/arrow-next.png" />' +
             '</div>';
 
         /*  
@@ -173,12 +175,16 @@ function lightbox (){
         // if ( $('#lightbox').length == 0) {
             $('body').append(lightbox);
         // } else if ($('#lightbox').length > 0) {
-            $('#photo').html('<img src="' + $image_href + '" />');
+            //$('#photo .view').html('<img src="' + $image_href + '" />');
+            $('#photo img').attr('src', $image_href);
 
             $('#lightbox').fadeIn(300);
             
             var $maxheightvalue = $(window).height() - 20;
             $("#photo img").css({"max-height": $maxheightvalue + "px"}, {"margin-top": "1em"});
+
+            var $top = Math.ceil($(window).height() / 2.5);
+            $("#lightbox .btn").css({"top": $top + "px"});
         // }
 
     });
