@@ -9,12 +9,12 @@
         <link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/styles/style.css" />
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <link href="http://fonts.googleapis.com/css?family=Droid+Sans|PT+Sans" rel="stylesheet" type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Oxygen|Hind|Merriweather+Sans' rel='stylesheet' type='text/css'>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
     {% endblock %}
     </head>
     <body>
-
+<div id="fb-root"></div>
         <header>
             <a href="{{ app.request.basepath }}/home/">
                 <img src="{{ app.request.basepath }}/media/layout/herb.jpg" alt="Herb Krakowskiej Legii Akademickiej przedstawiające herb Miasta Krakowa, uniwersytecki bieret oraz szarego wilka na czarnym tle." class="logo" />
@@ -33,15 +33,15 @@
 
             <nav class="menu Tborder Bborder">
                 <ul>
-                    <li> <a href="{{ url('/') }}" title="Home site">Strona główna</a></li>
-                    <li> <a href="{{ url('/warto/') }}" title="Dlaczego warto?">Dlaczego warto?</a></li>
-                    <li> <a href="{{ url('/dolacz/') }}" title="Dołącz do KLA">Dołącz</a></li>
-                    <li> <a href="{{ url('/dzialalnosc/') }}" title="Działalność">Działalność</a> </li>
-                    <li> <a href="{{ url('/wydarzenia/') }}" title="Wydarzenia">Wydarzenia</a></li>
-                    <li> <a href="{{ url('/zalozyciele/') }}" title="Założyciele">Założyciele</a></li>
-                    <li> <a href="{{ url('/historia/') }}" title="Historia KLA">Historia</a></li>
-                    <li> <a href="{{ url('/galeria/') }}" title="Galeria">Galeria</a></li>
-                    <li> <a href="{{ url('/quiz/') }}" title="Quiz">Quiz</a></li>
+                    <li id="home"> <a href="{{ url('/') }}" title="Home site">Strona główna</a></li>
+                    <li id="warto"> <a href="{{ url('/warto/') }}" title="Dlaczego warto?">Dlaczego warto?</a></li>
+                    <li id="dolacz"> <a href="{{ url('/dolacz/') }}" title="Dołącz do KLA">Dołącz</a></li>
+                    <li id="dzialalnosc"> <a href="{{ url('/dzialalnosc/') }}" title="Działalność">Działalność</a> </li>
+                    <li id="wydarzenia"> <a href="{{ url('/wydarzenia/') }}" title="Wydarzenia">Wydarzenia</a></li>
+                    <li id="zalozyciele"> <a href="{{ url('/zalozyciele/') }}" title="Założyciele">Założyciele</a></li>
+                    <li id="historia"> <a href="{{ url('/historia/') }}" title="Historia KLA">Historia</a></li>
+                    <li id="galeria"> <a href="{{ url('/galeria/') }}" title="Galeria">Galeria</a></li>
+                    <li id="quiz"> <a href="{{ url('/quiz/') }}" title="Quiz">Quiz</a></li>
                 </ul>
                 <div class="clear"></div>
             </nav>

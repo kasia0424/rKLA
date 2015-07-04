@@ -9,161 +9,267 @@
 
 
         <div class="content quiz">
-            <p>
-                Nie wiesz jaką specjalność wybrać? Ten quiz pomoże Ci odpowiednio wybrać.<br/>
-                Quiz ma 15 pytań, na których odpowiedź ułatwi dopasowanie do Ciebie odpowiedniej drużyny.<br/>
-                W każdej chwili możesz cofnąć się do poprzednich pytań i poprawić swoją odpowiedź.<br/>
-                Na końcu otrzymasz wykaz drużyn wraz <strong>ze swoim dopasowaniem</strong>.<br/>
-            </p>
+        <div id="main-quiz-holder">
+            <div id="intro-container" class="questionContainer border"> 
+                <h1> Znajdź drużynę dla siebie! </h1>
+                <p>
+                    Nie wiesz jaką specjalność wybrać? Ten quiz pomoże Ci odpowiednio wybrać.<br/>
+                    Quiz ma 15 pytań, na których odpowiedź ułatwi dopasowanie do Ciebie odpowiedniej drużyny.<br/>
+                    W każdej chwili możesz cofnąć się do poprzednich pytań i poprawić swoją odpowiedź.<br/>
+                    Na końcu otrzymasz wykaz drużyn wraz <strong>ze swoim dopasowaniem</strong>.<br/>
+                </p>
+                <a class="btnStart" href="#">Start</a>
+            </div>
 
-            <ol>
-                <li>Co wybierasz w sytuacji zagrożenia?
-                    <ul>
-                        <li>atak (punkt: WD, Szt, PD)</li>
-                        <li>obrona (punkt: IS, RM, LZ, Żand)</li>
-                        <li>unik (punkt: Zw, SW, Dyw, SN, SS)</li>
+           
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="1">Co wybierasz w sytuacji zagrożenia?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q1" value="a" id="q1a"><label for="q1a">atak (punkt: WD, Szt, PD)</label></li>
+                        <li><input type="radio" name="q1" value="b" id="q1b"><label for="q1b">obrona (punkt: IS, RM, LZ, Żand)</label></li>
+                        <li><input type="radio" name="q1" value="c" id="q1c"><label for="q1c">unik (punkt: Zw, SW, Dyw, SN, SS)</label></li>
                     </ul>
-                </li>
 
-                <li>Jaki jest Twój stosunek do wody?
-                    <ul>
-                        <li>świetnie pływam i lubię nurkować(punkt: WD, Szt, PD, RM, Zw)</li>
-                        <li>dość dobrze pływam, ale tylko w ciepłej wodzie (punkt: IS, SW, Dyw, SS)</li>
-                        <li>nie umiem pływać i boję się, że utonę (punkt: LZ, Żand, SN)</li>
+                    <div class="btnContainer">
+                        <div class="next"><a class="btnNext"  href="#">Następne</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="2">Jaki jest Twój stosunek do wody?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q2" value="a" id="q2a"><label for="q2a">świetnie pływam i lubię nurkować(punkt: WD, Szt, PD, RM, Zw)</label></li>
+                        <li><input type="radio" name="q2" value="b" id="q2b"><label for="q2b">dość dobrze pływam, ale tylko w ciepłej wodzie (punkt: IS, SW, Dyw, SS)</label></li>
+                        <li><input type="radio" name="q2" value="c" id="q2c"><label for="q2c">nie umiem pływać i boję się, że utonę (punkt: LZ, Żand, SN)</label></li>
                     </ul>
-                </li>
 
-                <li>Jakiego jesteś wzrostu?
-                    <ul>
-                        <li>180cm lub więcej (Szt, RM, IS, SS, Żand.)</li>
-                        <li>między 165-179cm (Dyw, WD, LZ)</li>
-                        <li>poniżej 165 cm (Zw, SW, SN, PD)</li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="3">Jakiego jesteś wzrostu?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q3" value="a" id="q3a"><label for="q3a">180cm lub więcej (Szt, RM, IS, SS, Żand)</label></li>
+                        <li><input type="radio" name="q3" value="b" id="q3b"><label for="q3b">między 165-179cm (Dyw, WD, LZ)</label></li>
+                        <li><input type="radio" name="q3" value="c" id="q3c"><label for="q3c">poniżej 165 cm (Zw, SW, SN, PD)</label></li>
                     </ul>
-                </li>
 
-                <li>Jaką masz Twoja kondycję?
-                    <ul>
-                        <li>silną (Szt, SS, Żand, WD, Zw,)</li>
-                        <li>przeciętną (RM, Dyw, SW, PD)</li>
-                        <li>muszę nad nią popracować (IS, LZ, SN)</li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="4">Jaką masz Twoja kondycję?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q4" value="a" id="q4a"><label for="q4a">silną (Szt, SS, Żand, WD, Zw)</label></li>
+                        <li><input type="radio" name="q4" value="b" id="q4b"><label for="q4b">przeciętną (RM, Dyw, SW, PD)</label></li>
+                        <li><input type="radio" name="q4" value="c" id="q4c"><label for="q4c">muszę nad nią popracować (IS, LZ, SN)</label></li>
                     </ul>
-                </li>
 
-                <li>Kogo chciałbyś mieć w drużynie?
-                    <ul>
-                        <li>najlepiej samych mężczyzn (Szt, Zw, PD)</li>
-                        <li>mieszany skład / obojętnie (SS, WD, Dyw, SW, IS)</li>
-                        <li>najlepiej same kobiety (Żand, RM, LZ, SN) </li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="5">Kogo chciałbyś mieć w drużynie?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q5" value="a" id="q5a"><label for="q5a">najlepiej samych mężczyzn (Szt, Zw, PD)</label></li>
+                        <li><input type="radio" name="q5" value="b" id="q5b"><label for="q5b">mieszany skład / obojętnie (SS, WD, Dyw, SW, IS)</label></li>
+                        <li><input type="radio" name="q5" value="c" id="q5c"><label for="q5c">najlepiej same kobiety (Żand, RM, LZ, SN)</label></li>
                     </ul>
-                </li>
 
-                <li>Jaką broń zabrałbyś na pole walki jako sowją broń główną?
-                    <ul>
-                        <li>ciężki karabin szturmowy (Szt, WD, PD, Dyw)</li>
-                        <li>lekka broń automatyczna (Zw, IS, Żand, RM)</li>
-                        <li>coś innego (SS, SW, LZ, SN)</li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="6">Jaką broń zabrałbyś na pole walki jako sowją broń główną?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q6" value="a" id="q6a"><label for="q6a">ciężki karabin szturmowy (Szt, WD, PD, Dyw)</label></li>
+                        <li><input type="radio" name="q6" value="b" id="q6b"><label for="q6b">lekka broń automatyczna (Zw, IS, Żand, RM)</label></li>
+                        <li><input type="radio" name="q6" value="c" id="q6c"><label for="q6c">coś innego (SS, SW, LZ, SN)</label></li>
                     </ul>
-                </li>
 
-                <li>Co wybrałbyś jako broń dodatkową?
-                    <ul>
-                        <li>nóż, bagnet lub inną broń białą (WD, Zw, Żand, RM, SS)</li>
-                        <li>granaty i ładunki wybuchowe (Szt, PD, Dyw, IS, SN)</li>
-                        <li>pistolet (SW, LZ)</li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="7">Co wybrałbyś jako broń dodatkową?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q7" value="a" id="q7a"><label for="q7a">nóż, bagnet lub inną broń białą (WD, Zw, Żand, RM, SS)</label></li>
+                        <li><input type="radio" name="q7" value="b" id="q7b"><label for="q7b">granaty i ładunki wybuchowe (Szt, PD, Dyw, IS, SN)</label></li>
+                        <li><input type="radio" name="q7" value="c" id="q7c"><label for="q7c">pistolet (SW, LZ)</label></li>
                     </ul>
-                </li>
 
-                <li>Czym chciałbyś jeździć w wojsku?
-                    <ul>
-                        <li>czołgami i wozami ciężkimi (Szt, SN)</li>
-                        <li>ciężarówką, <strong>a na pace pełne zaopatrzenie</strong> (IS, Dyw, LZ, Żand)</li>
-                        <li>samochodem terenowym (WD, SW, RM)</li>
-                        <li>na motocyklu lub helikopterem (PD, Zw, SS)</li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="8">Czym chciałbyś jeździć w wojsku?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q8" value="a" id="q8a"><label for="q8a">czołgami i wozami ciężkimi (Szt, SN)</label></li>
+                        <li><input type="radio" name="q8" value="b" id="q8b"><label for="q8b">ciężarówką, <strong>a na pace pełne zaopatrzenie</strong> (IS, Dyw, LZ, Żand)</label></li>
+                        <li><input type="radio" name="q8" value="c" id="q8c"><label for="q8c">samochodem terenowym (WD, SW, RM)</label></li>
+                        <li><input type="radio" name="q8" value="d" id="q8d"><label for="q8d">na motocyklu lub helikopterem (PD, Zw, SS)</label></li>
                     </ul>
-                </li>
 
-                <li>Gdzie znalazłbyś się, gdyby wybuchła wojna?
-                    <ul>
-                        <li>walczę na froncie (Szt, WD, SW, PD, Zw) </li>
-                        <li>pomagam na zapleczu, ale jeżeli będzie taka konieczność - walczę na froncie (IS, Dyw)</li>
-                        <li>pomagam na zapleczu i <storng>ratuję</strong>, ale nie walczę (LZ, Żand, RM)</li>
-                        <li>uciekam z kraju, a jeżeli się nie da, unikam walki (SN, SS) </li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="9">Gdzie znalazłbyś się, gdyby wybuchła wojna?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q9" value="a" id="q9a"><label for="q9a">walczę na froncie (Szt, WD, SW, PD, Zw)</label></li>
+                        <li><input type="radio" name="q9" value="b" id="q9b"><label for="q9b">pomagam na zapleczu, ale jeżeli będzie taka konieczność - walczę na froncie (IS, Dyw)</label></li>
+                        <li><input type="radio" name="q9" value="c" id="q9c"><label for="q9c">pomagam na zapleczu i <storng>ratuję</strong>, ale nie walczę (LZ, Żand, RM)</label></li>
+                        <li><input type="radio" name="q9" value="d" id="q9d"><label for="q9d">uciekam z kraju, a jeżeli się nie da, unikam walki (SN, SS)</label></li>
                     </ul>
-                </li>
 
-                <li>Gdybym musiał zabić kogoś na wojnie:
-                    <ul>
-                        <li>zrobiłbym to z zimną krwią (Szt, WD, SW, PD, Zw)</li>
-                        <li>podszedłbym do tego jak żołnierz, ale kosztowało by mnie to sporo emocji (Dyw, Żand)</li>
-                        <li>nie jestem pewnien, czy dałbym radę (IS, LZ, RM)</li>
-                        <li>na pewno bym nie potrafił (SS, SN)</li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="10">Gdybym musiał zabić kogoś na wojnie:</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q10" value="a" id="q10a"><label for="q10a">zrobiłbym to z zimną krwią (Szt, WD, SW, PD, Zw)</label></li>
+                        <li><input type="radio" name="q10" value="b" id="q10b"><label for="q10b">podszedłbym do tego jak żołnierz, ale kosztowało by mnie to sporo emocji (Dyw, Żand)</label></li>
+                        <li><input type="radio" name="q10" value="c" id="q10c"><label for="q10c">nie jestem pewnien, czy dałbym radę (IS, LZ, RM)</label></li>
+                        <li><input type="radio" name="q10" value="d" id="q10d"><label for="q10d">na pewno bym nie potrafił (SS, SN)</label></li>
                     </ul>
-                </li>
 
-                <li>Jak ocenilbyś swój wzrok i słuch?
-                    <ul>
-                        <li>bardzo dobrze (SW, Zw, Dyw, RM)</li>
-                        <li>przeciętnie (WD, Szt, PD, Żand, IS)</li>
-                        <li>niezbyt dobrze (LZ, SS, SN)</li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="11">Jak ocenilbyś swój wzrok i słuch?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q11" value="a" id="q11a"><label for="q11a">bardzo dobrze (SW, Zw, Dyw, RM)</label></li>
+                        <li><input type="radio" name="q11" value="b" id="q11b"><label for="q11b">przeciętnie (WD, Szt, PD, Żand, IS)</label></li>
+                        <li><input type="radio" name="q11" value="c" id="q11c"><label for="q11c">niezbyt dobrze (LZ, SS, SN)</label></li>
                     </ul>
-                </li>
 
-                <li>Jaka jest Twoja orientację w terenie?
-                    <ul>
-                        <li>nie zgubię się nawet bez mapy (SW, Zw, Dyw, PD)</li>
-                        <li>poradzę sobie wszędzie, ale tylko z mapą i kompasem (RM, WD, Szt, Żand, IS, LZ)</li>
-                        <li>słabą (SS. SN)</li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="12">Jaka jest Twoja orientację w terenie?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q12" value="a" id="q12a"><label for="q12a">nie zgubię się nawet bez mapy (SW, Zw, Dyw, PD)</label></li>
+                        <li><input type="radio" name="q12" value="b" id="q12b"><label for="q12b">poradzę sobie wszędzie, ale tylko z mapą i kompasem (RM, WD, Szt, Żand, IS, LZ)</label></li>
+                        <li><input type="radio" name="q12" value="c" id="q12c"><label for="q12c">słabą (SS, SN)</label></li>
                     </ul>
-                </li>
 
-                <li>Jesteś w stanie robić to, co Ci rozkazano bez oporów?
-                    <ul>
-                        <li>będę słuchał rozkazów i ich nie zakwestionuję - bo tak trzeba (PD, WD, Szt, Żand)</li>
-                        <li>nie mam problemu, chyba że rozkazy są głupie (Zw, Dyw, IS, LZ)</li>
-                        <li>rozkazy to tylko luźne wskazówki, mogę to przecież zrobić lepiej, po swojemu (RM)</li>
-                        <li>zawsze działam na własną rękę (SW, SS, SN)</li>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="13">Jesteś w stanie robić to, co Ci rozkazano bez oporów?</p>
+                    <ul class="answers">
+                        <li><input type="radio" name="q13" value="a" id="q13a"><label for="q13a">będę słuchał rozkazów i ich nie zakwestionuję - bo tak trzeba (PD, WD, Szt, Żand)</label></li>
+                        <li><input type="radio" name="q13" value="b" id="q13b"><label for="q13b">nie mam problemu, chyba że rozkazy są głupie (Zw, Dyw, IS, LZ)</label></li>
+                        <li><input type="radio" name="q13" value="c" id="q13c"><label for="q13c">rozkazy to tylko luźne wskazówki, mogę to przecież zrobić lepiej, po swojemu (RM)</label></li>
+                        <li><input type="radio" name="q13" value="d" id="q13d"><label for="q13d">zawsze działam na własną rękę (SW, SS, SN)</label></li>
                     </ul>
-                </li>
-
-                <li>W jakim zespole chciałbyś działać na wojnie?
-                    <ul>
-                        <li>najlepiej samodzielnie (PD, IS)</li>
-                        <li>najwyżej z jednym partnerem (Zw, LZ, SW)</li>
-                        <li>sekcja 3-osobowa byłaby idealna (WD, Żand, Dyw)</li>
-                        <li>sekcja 4-osobowa byłaby idealna (RM)</li>
-                        <li>całą druzyną (Szt, SN, SS)</li>
-                    </ul>
-                </li>
-            </ol>
-
-            <article class="Tborder">
-                <h1>Wyniki</h1>
-                <h2>Drużyna:</h2>
                 
-                <p>(PD) – drużyna powietrzno-desantowa, uderzają skacząc z helikoptera lub samolotu przy użyciu karabinów lub lżejszego sprzętu, doskonale radzą sobie w nieznanym terenie, są bardzo odważnymi, by nie bać się skoczyć i w razie rozsypania na dużym obszarze za linią frontu potrafić radzić sobie samodzielnie <button class="quiz button">100%</button></p>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnNext"  href="#">Dalej</a></div> 
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+                <div class="questionContainer hidden"> 
+                    <p class="question" id="14">W jakim zespole chciałbyś działać na wojnie?</p>
+                        <ul class="answers">
+                            <li><input type="radio" name="q14" value="a" id="q14a"><label for="q14a">najlepiej samodzielnie (PD, IS)</label></li>
+                            <li><input type="radio" name="q14" value="b" id="q14b"><label for="q14b">najwyżej z jednym partnerem (Zw, LZ, SW)</label></li>
+                            <li><input type="radio" name="q14" value="c" id="q14c"><label for="q14c">sekcja 3-osobowa byłaby idealna (WD, Żand, Dyw)</label></li>
+                            <li><input type="radio" name="q14" value="d" id="q14d"><label for="q14d">sekcja 4-osobowa byłaby idealna (RM)</label></li>
+                            <li><input type="radio" name="q14" value="e" id="q14e"><label for="q14e">całą druzyną (Szt, SN, SS)</label></li>
+                        </ul>
+                    <div class="btnContainer"> 
+                        <div class="prev"><a class="btnPrev" href="#">Wróć</a></div> 
+                        <div class="next"><a class="btnShowResult" href="#">Wyniki</a></div>
+                        <div class="clear"></div> 
+                    </div>
+                </div>
+          
+            
+
+            
+              
+            
+            <div id="progressKeeper"> 
                 
-                <p>(WD) – drużyna wodno-desantowa, świetni pływacy, dla nich woda to naturalne środowisko, przeszkoleni w pokonywaniu przeszkód wodnych i nurkowaniu umiejętnie zaskakują przeciwnika wynurzając się tam gdzie ataku się nie spodziewa za pomocą ciężkiego sprzętu i ostrych noży, gdy ich się jeszcze nie zobaczy <button class="quiz button">100%</button></p>
-                
-                <p>(SW) – drużyna strzelców wyborowych, to ludzie o sokolim wzroku i pewnej ręce, nie tylko używających karabinów z celownikami optycznymi, ale każdej broni strzeleckiej z dużą skutecznością, specjalizują się w eliminowaniu przeciwnika z ukrycia i z dużej odległości <button class="quiz button">100%</button></p>
+                <div id="progress"> <p> Postęp</p>
+                </div> 
+            </div> 
+            <div id="notice"> 
+                Wybierz odpowiedź 
+            </div>
+            <div id="results-container" class="questionContainer hidden"> 
+            <div id="resultKeeper">
+                <article class="Tborder">
+                    <h1>Wyniki</h1>
+                    <h2>Drużyna:</h2>
+                    
+                    <div id="PD"><strong>(PD) – drużyna powietrzno-desantowa</strong>, uderzają skacząc z helikoptera lub samolotu przy użyciu karabinów lub lżejszego sprzętu, doskonale radzą sobie w nieznanym terenie, są bardzo odważnymi, by nie bać się skoczyć i w razie rozsypania na dużym obszarze za linią frontu potrafić radzić sobie samodzielnie <button class="quiz button">100%</button></div>
+                    
+                    <p id="WD"><strong>(WD) – drużyna wodno-desantowa</strong>, świetni pływacy, dla nich woda to naturalne środowisko, przeszkoleni w pokonywaniu przeszkód wodnych i nurkowaniu umiejętnie zaskakują przeciwnika wynurzając się tam gdzie ataku się nie spodziewa za pomocą ciężkiego sprzętu i ostrych noży, gdy ich się jeszcze nie zobaczy <button class="quiz button">100%</button></p>
+                    
+                    <p id="SW"><strong>(SW) – drużyna strzelców wyborowych</strong>, to ludzie o sokolim wzroku i pewnej ręce, nie tylko używających karabinów z celownikami optycznymi, ale każdej broni strzeleckiej z dużą skutecznością, specjalizują się w eliminowaniu przeciwnika z ukrycia i z dużej odległości <button class="quiz button">100%</button></p>
 
-                <p>(Szt) – drużyna szturmowa, to żołnierze przeznaczeni do frontalnych ataków, po zęby uzbrojeni i najodważniejsi, silni by radzić sobie z mnóstwem ekwipunku, ciężką bronią i granatami na raz, śmiertelni w bezpośrednim starciu i bezwzględni dla wrogów, szybko zajmują budynki i teren, gdyż są najlepiej przeszkoleni taktycznie <button class="quiz button">100%</button></p>
-                
-                <p>(Zw) – drużyna zwiadowcza, to mała ekipa działająca samotnie lub w parach, w celu szybkiej identyfikacji, rozpoznania działań przeciwnika, znają go i potrafią go wytropić, specjalizują się w cichej wojnie, doskonale posługując się bronią białą, potrafią łapać jeńców, a szczególnie oficerów wroga <button class="quiz button">100%</button></p>
+                    <p id="Szt"><strong>(Szt) – drużyna szturmowa</strong>, to żołnierze przeznaczeni do frontalnych ataków, po zęby uzbrojeni i najodważniejsi, silni by radzić sobie z mnóstwem ekwipunku, ciężką bronią i granatami na raz, śmiertelni w bezpośrednim starciu i bezwzględni dla wrogów, szybko zajmują budynki i teren, gdyż są najlepiej przeszkoleni taktycznie <button class="quiz button">100%</button></p>
+                    
+                    <p id="Zw"><strong>(Zw) – drużyna zwiadowcza</strong>, to mała ekipa działająca samotnie lub w parach, w celu szybkiej identyfikacji, rozpoznania działań przeciwnika, znają go i potrafią go wytropić, specjalizują się w cichej wojnie, doskonale posługując się bronią białą, potrafią łapać jeńców, a szczególnie oficerów wroga <button class="quiz button">100%</button></p>
 
-                <p>(IS) – drużyna inżyniersko-saperska, to ekipa profesjonalistów, znających się na broni, jej naprawianiu, konserwowaniu, na wszelkim sprzęcie wojskowym, pojazdach, bez nich reszta mogła by zapewne utknąć gdzieś w polu, ponadto znają się też na ładunkach wybuchowych i potrafią zakładać pola minowe, jak i je rozpoznawać i omijać <button class="quiz button">100%</button></p>
+                    <p id="IS"><strong>(IS) – drużyna inżyniersko-saperska</strong>, to ekipa profesjonalistów, znających się na broni, jej naprawianiu, konserwowaniu, na wszelkim sprzęcie wojskowym, pojazdach, bez nich reszta mogła by zapewne utknąć gdzieś w polu, ponadto znają się też na ładunkach wybuchowych i potrafią zakładać pola minowe, jak i je rozpoznawać i omijać <button class="quiz button">100%</button></p>
 
-                <p>(RM) – drużyna ratunkowo-medyczna, to ludzie odpowiedzialni za ratowanie rannych na polu walki i w różnych katastrofach, przeszkoleni z udzielenia pomocy również w warunkach walki są lżej uzbrojeni ale bez nich nasze oddziały szybko by się nie pozbierały, znają biegle sprzęt medyczny i chyba wszystkie choroby i rodzaje ran, i oczywiście nie boją się krwi <button class="quiz button">100%</button></p>
+                    <p id="RM"><strong>(RM) – drużyna ratunkowo-medyczna</strong>, to ludzie odpowiedzialni za ratowanie rannych na polu walki i w różnych katastrofach, przeszkoleni z udzielenia pomocy również w warunkach walki są lżej uzbrojeni ale bez nich nasze oddziały szybko by się nie pozbierały, znają biegle sprzęt medyczny i chyba wszystkie choroby i rodzaje ran, i oczywiście nie boją się krwi <button class="quiz button">100%</button></p>
 
-                <p>(LZ) – drużyna logistyczno-zaopatrzeniowa, najlepsza fucha dla lubiących gotować, pracują na zapleczu, by reszta wojaków miała chwilę wytchnienia, zapewniają dach nad głową, ciepły posiłek, ale i zaopatrują każdą drużynę w amunicję i paliwo oraz inne niezbędne rzeczy opiekując się taborami <button class="quiz button">100%</button></p>
+                    <p id="LZ"><strong>(LZ) – drużyna logistyczno-zaopatrzeniowa</strong>, najlepsza fucha dla lubiących gotować, pracują na zapleczu, by reszta wojaków miała chwilę wytchnienia, zapewniają dach nad głową, ciepły posiłek, ale i zaopatrują każdą drużynę w amunicję i paliwo oraz inne niezbędne rzeczy opiekując się taborami <button class="quiz button">100%</button></p>
 
-                <p>(Dyw) – drużyna dywersyjna, przeznaczona do operowania na tyłach wroga i sabotowania wszelkich jego działań przez detonowanie mostów, linii kolejowych, zatruwanie źródeł wody, niszczenie zapasów, dezorientację przeciwnika, ale w razie potrzeby potrafiąca się skryć i odeprzeć ogniem w walce konwencjonalnej <button class="quiz button">100%</button></p>
+                    <p id="Dyw"><strong>(Dyw) – drużyna dywersyjna</strong>, przeznaczona do operowania na tyłach wroga i sabotowania wszelkich jego działań przez detonowanie mostów, linii kolejowych, zatruwanie źródeł wody, niszczenie zapasów, dezorientację przeciwnika, ale w razie potrzeby potrafiąca się skryć i odeprzeć ogniem w walce konwencjonalnej <button class="quiz button">100%</button></p>
 
-                <p>(Żand) – drużyna żandarmeryjna, specjalizuje się w utrzymaniu porządku wewnątrz jednostki oraz na terenie okupowanym, gdzie należy ostrożnie postępować z ludnością cywilną, potrafią ponadto skutecznie stosować środki przymusu bezpośredniego, potrzebnego do kajdankowania i egzekwowania rozkazów oraz aresztowań, wykonują także wyroki oraz przesłuchują jeńców, odpowiadają za bezpieczeństwo wewnętrzne oddziału, są doskonałymi wartownikami <button class="quiz button">100%</button></p>
+                    <p id="Zand"><strong>(Żand) – drużyna żandarmeryjna</strong>, specjalizuje się w utrzymaniu porządku wewnątrz jednostki oraz na terenie okupowanym, gdzie należy ostrożnie postępować z ludnością cywilną, potrafią ponadto skutecznie stosować środki przymusu bezpośredniego, potrzebnego do kajdankowania i egzekwowania rozkazów oraz aresztowań, wykonują także wyroki oraz przesłuchują jeńców, odpowiadają za bezpieczeństwo wewnętrzne oddziału, są doskonałymi wartownikami <button class="quiz button">100%</button></p>
 
-                <p>(SS) – sekcje sportowe, działają przy KLA, jako koła niemilitarne, działają organizując spotkania i rywalizację członków w różnych dyscyplinach, co ma członkom dać możliwość utrzymania dobrej kondycji fizycznej i techniki <button class="quiz button">100%</button></p>
+                    <p id="S"><strong>(S) – sekcje sportowe</strong>, działają przy KLA, jako koła niemilitarne, działają organizując spotkania i rywalizację członków w różnych dyscyplinach, co ma członkom dać możliwość utrzymania dobrej kondycji fizycznej i techniki <button class="quiz button">100%</button></p>
 
-                <p>(SN) – sekcje naukowe, działają przy KLA, jako koła niemilitarne, pomagają studentom w realizacji swoich zainteresowań poprzez organizację wydarzeń kulturalnych, spotkań, dyskusji w dziedzinach związanych z wojskowością <button class="quiz button">100%</button></p>
-            </article>
+                    <p id="SN"><strong>(SN) – sekcje naukowe</strong>, działają przy KLA, jako koła niemilitarne, pomagają studentom w realizacji swoich zainteresowań poprzez organizację wydarzeń kulturalnych, spotkań, dyskusji w dziedzinach związanych z wojskowością <button class="quiz button">100%</button></p>
+                </article>
+                </div> 
+                </div> 
+               </div>
+            </div>
 
 
 {% endblock %}

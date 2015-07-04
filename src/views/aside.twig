@@ -1,17 +1,6 @@
 {% block aside %}
 <aside>
-    <section class="thubmails Bborder">
-        <h1>Ostatnie zdjęcia:</h1>
-        {%  if lasts|length > 0 %}
-            {% for photo in lasts %}
-                <img class="border lightbox_trigger" src="{{ app.request.basepath }}/media/post/{{ photo.name }}.jpg" alt="{{ photo.description }}" />
-            {% endfor %}
-        {% else %}
-            <p>
-                Niedługo wrzucimy zdjęcia z wydarzeń.
-            </p>
-        {% endif %}
-    </section>
+
 
     <section class="Bborder">
         <h1> Współpraca </h1>
@@ -34,10 +23,33 @@
             </section>
         </article>
     </section>
+        
+    <section class="Bborder">
+        <div class="fb-page" data-href="https://www.facebook.com/legiaakademickahomepage" data-width="445" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/legiaakademickahomepage">
+                    <a href="https://www.facebook.com/legiaakademickahomepage">Legia Akademicka</a>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    
+    <section class="thubmails Bborder">
+        <h1>Ostatnie zdjęcia:</h1>
+        {%  if lasts|length > 0 %}
+            {% for photo in lasts %}
+                <img class="border lightbox_trigger" src="{{ app.request.basepath }}/media/post/{{ photo.name }}.jpg" alt="{{ photo.description }}" />
+            {% endfor %}
+        {% else %}
+            <p>
+                Niedługo wrzucimy zdjęcia z wydarzeń.
+            </p>
+        {% endif %}
+    </section>
 
     <section class="Bborder">
         <article class="web">
-            <h1>Artykuly o obronnosci </h1>
+            <h1>Artykuły o obronności </h1>
             <section>
                 <!-- <h2> NAGłÓWEK </h2> -->
                 <p> Wojsko zauważyło potencjał tkwiący w organizacjach paramilitarnych i klasach mundurowych. Chce ich włączenia w system szkoleń rezerwistów.</p>

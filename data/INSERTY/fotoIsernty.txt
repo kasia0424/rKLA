@@ -1,0 +1,136 @@
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie z zielonej taktyki', 'Certyfikowane szkolenie z zakresu zielonej taktyki zorganizowane wspólnie przez Krakowsk¹ Legiê Akademick¹ i Centrum Bezpieczeñstwa i Monitorowania Zagro¿eñ odby³o siê w ostatni weekend w Jurze Krakowsko-Czêstochowskiej. Zapraszamy do zapoznania siê ze szczegó³ow¹ fotorelacj¹.', '2014-04-12', 'Piotr Wilczyñski');
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('1782068_288816451278244_3278467240047843603_n', '1', 'Zbiórka o poranku na poligonie. Rozpoczêto od podstaw, gdy¿ wiele osób by³o na szkoleniach organizowanych przez Krakowsk¹ Legiê Akademick¹ oraz Centrum Bezpieczeñstwa i Monitorowania Zagro¿eñ po raz pierwszy. Na zdjêciu uczestnicy obserwuj¹ jak prawid³owo trzymaæ i poruszaæ siê z broni¹.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('1959320_288816454611577_7163391675345681755_n', '1', 'Jednostka Krakowskiej Legii Akademickiej liczy obecnie dwa plutony: piechoty i wsparcia. Cz³onkowie 1 plutonu piechoty utworzyli dru¿ynê BRAVO...');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10255669_288816567944899_3303278382148274559_n', '1', 'A cz³onkowie 1 plutonu wsparcia dru¿ynê ALPHA. Dalsze æwiczenia przebiega³y zgodnie z tym podzia³em.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10157365_288816781278211_7773704232559152385_n', '1', 'Brzegi zabezpieczano zgodnie z taktyk¹ zielon¹. Co jednak, gdy wróg zasypie gradem kul?');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10259970_288816797944876_498627401002683871_n', '1', 'Mateusz zosta³ pora¿ony ogniem swoich towarzyszy, przez co rannego musieli ewakuowaæ z pola walki na wyk³ady.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10167992_288817337944822_4692365854456539969_n', '1', 'Okop dru¿yny Alpha pozosta³ niezdobyty, zginê³o tylko dwoje obroñców, zaœ ca³a dru¿yna Bravo zosta³a wyeliminowana.');
+
+
+
+
+
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie powietrzno-desantowe', 'Cz³onkowie KLA wziêli udzia³ dziêki Panu Komendantowi w zorganizowanym przez Ogólnopolski Magazyn Zawodowców "Ochroniarz" szkoleniu powietrzno-desantowym na odznakê SSSO. Szkolenie odby³o siê w Krakowie i Aeroklubie Krakowskim w podkrakowskim Pobiedniku Wielkim. Kierownikiem przedsiêwziêcia by³ Pan Krzysztof Witulski - by³y oficer wojsk powietrzno-desantowych. Jako instruktora mieliœmy zaszczyt mieæ Pana Marcina Bieleckiego - wielokrotnego mistrza Polski i Europy w wykonywaniu skoków. Partnerem szkolenia by³a tak¿e Strefa Skoków Spadochronowych "Kraksky" i ich instruktorzy.
+
+Pierwszy dzieñ szkolenia to czêœæ teoretyczna. Drugiego dnia zajêcia praktyczne w aeroklubie na naziemnych trena¿erach oraz test wiedzy teoretycznej, który wszyscy legioniœci zdali. Pod wieczór rozpoczêto te¿ pierwsze skoki, lecz ¿aden z legionistów tego dnia nie zd¹¿y³ ju¿ skoczyæ.
+
+Niedziela, ostatni dzieñ szkolenia, to skoki oraz ceremonia w³¹czenia do bractwa skoczków spadochronowych wszystkich legionistów, bowiem ¿aden nie splami³ siê powrotem na lotnisko w samolocie.
+
+Uczestnikom chwa³a i gratulacje!
+Organizatorom serdeczne podziêkowania!
+Czekamy na kolejne edycje!', '2014-05-09', 'Piotr Wilczyñski');
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10371425_298296066996949_8270063552274988182_n', '2', 'Pierwszego dnia mia³y miejsce zajêcia teoretyczne. Prawo lotnicze jednak nie ka¿dego interesowa³o.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10309260_298296040330285_7011908648529237098_n', '2', 'Po wyk³adach przysz³a kolej na bardziej interesuj¹ce aspekty, na przyk³ad budowê spadochronu.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10252076_298296086996947_6867431477958389848_n', '2', 'Drugi dzieñ szkolenia poœwiêcony by³ szkoleniom praktycznym. Instruktor pokazywa³ uczestnikom jak zachowaæ siê w spadochronie w powietrzu.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10259950_298296146996941_5666568798254670835_n', '2', 'Drugiego dnia przeanalizowano tak¿e wszelkie mo¿liwe wypadki i awarie jakie moga wyst¹piæ w powietrzu, wiêc niektórym przesta³o byæ weso³o.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10360635_298297950330094_1447980133972110833_n', '2', 'Trzeci dzieñ to dzieñ gdy legioniœci musieli wykonaæ skok. Pierwszy wylot - Magda i Dawid ju¿ przy ostatniej odprawie.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10313988_298298013663421_7358695046402019842_n', '2', 'Pierwsi legioniœci w powietrzu - Dawid a za nim Magda. Pogoda nie by³a lekka - mocny wiatr.');
+
+
+
+
+
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie unitarne - cz. terenowa', 'Przedwczoraj nasi legioniœci kontynuowali szkolenie unitarne rozpoczête jeszcze w maju. Czêœæ druga poœwiêcona by³a zagadnieniom zwi¹zanym z terenem walki.', '2014-04-07', 'Piotr Wilczyñski');
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10410547_307311982762024_1851508119460189023_n', '3', 'Rozpoczêto od zajêæ na œwietlicy. Ka¿dy mia³ za zadanie posi¹œæ wiedzê i umiejêtnoœci z zakresu pos³ugiwania siê map¹ i busol¹. Nie mo¿na pozwoliæ, by legionista siê zgubi³. Jednym z pierwszych zagadnieñ by³o orientowanie map.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10389021_307311986095357_3177739058737523509_n', '3', 'Ze wszystkimi trudnymi zagadnieniami legioniœci sobie poradzili, w razie potrzeby zasiêgaj¹c rady instruktorów: komendanta KLA, oraz dowódców wspó³organizuj¹cej kurs 1 Ma³opolskiej Dru¿yny Obrony Terytorialnej');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10436205_307312019428687_8767548303456140903_n', '3', 'Nauka wyznaczania azymutu wraz z 1MDOT');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10410741_307312052762017_8051354438747044799_n', '3', 'Po zajêciach w œwietlicy przysz³a kolej na wykonywanie zadañ terenowych z map¹ i busol¹. Rozpoczêto od wyznaczania odleg³oœci. Na zdjêciu uczestnicy szkolenia dokonuj¹ pomiaru indywidualnego parokroku.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10252130_307312062762016_5652036622144906833_n', '3', 'Przemieszczanie siê w terenie by³o okazj¹ do przypomnienia podstaw zielonej taktyki. Patrol w czasie obserwacji na terenie otwartym.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10252130_307312062762016_5652036622144906833_n', '3', 'Na zakoñczenie legioniœci mieli mo¿liwoœæ zapoznaæ siê ze sprzêtem i umiejêtnoœciami zwi¹zanymi z przetrwaniem. Na zdjêciu baza pasywna zamaskowana siatk¹ - dzie³o naszych zwiadowców.');
+
+
+
+
+
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie unitarne - cz. bojowa', 'W gor¹cy niedzielny poranek nasi legioniœci znów wybrali siê na poligon i strzelnicê, by kontynuowaæ szkolenie unitarne. Trzecia czêœæ kursu zawiera³a treœci pomagaj¹ce prze¿yæ walkê i utrzymaæ dyscyplinê.', '2014-06-08', 'Piotr Wilczyñski');
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10409562_307318536094702_1087624840461863742_n', '4', 'Instruktorzy objaœniaj¹ budowê i funkcjonowanie karabinka szturmowego AKM.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10417613_307318589428030_3976580948282973916_n', '4', 'Pora na samodzielne na³adowanie magazynków.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10450167_307318592761363_7773620862485980941_n', '4', 'Strzelano z kbk AKM dynamicznie, z trzech postaw strzeleckich: stoj¹cej...');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('1535456_307318612761361_7929932137796638479_n', '4', '...z postawy le¿¹cej (najwygodniej)...');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10403666_307318639428025_3447895741010786298_n', '4', '...i z postawy klêcz¹cej niskiej... oczywiœcie strzelano ostr¹ amunicj¹.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10469364_307318539428035_2193491957695933761_n', '4', 'Na koniec, legioniœci musieli wykonaæ okop indywidualny. Nie by³o to ³atwe w 30-stopniowym upale i w kamienistej glebie. Po okopaniu siê odby³y siê krótkie æwiczenia taktyczne, podczas których ka¿dy móg³ poznaæ zalety i wady konstrukcji okopu podczas obrony przed natarciem.');
+
+
+
+
+
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie unitarne - cz. fina³owa z przysiêg¹ wojskow¹', 'W dn. 21 czerwca 2014 roku odby³ siê ostatni dzieñ szkolenia unitarnego. Ci którzy przeszli sprawdzian (10 legionistów) mieli mo¿liwoœæ z³o¿enia przysiêgi wojskowej. Z tej ostatniej zamieœciliœmy równie¿ krótk¹ relacjê filmow¹, by³ to dla nas bowiem czas wyj¹tkowy - pierwsza przysiêga wojskowa w Krakowskiej Legii Akademickiej od 1939 roku!', '2014-06-21', 'Piotr Wilczyñski');
+
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10491288_312213532271869_56105562567915260_n', '5', 'W czwartym dniu szkolenia legioniœci æwiczyli zak³adanie masek p-gaz. i kombinezonów OP-1 (na zdjêciu jeszcze bez rêkawic).');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10455051_312213362271886_5884918276076535438_n', '5', 'Æwiczono tak¿e budowê schronów i umocnieñ polowych, a tak¿e przygotowywano siê do odpierania ataków broni¹ chemiczn¹ (gaz) w warunkach bojowych.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('1043858_312213385605217_8074462218404012701_n', '5', 'Na zajêciach legioniœci uczyli siê tak¿e stosowania radiostacji, szyfrowania wiadomoœci, przekazywania wiadomoœci, a tak¿e wydawania i przekazywania rozkazów.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10447398_312213405605215_1968656499796164410_n', '5', 'Zak³adanie masek p-gaz i kombinezonów na czas.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10407297_312213445605211_4296419084820473802_n', '5', 'Przysiêga wojskowa odby³a siê przy blasku pochodni.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10428569_312213365605219_5323285375956274720_n', '5', 'Po przysiêdze, ceremonia pasowania na legionistê, przez komendanta przy obecnoœci przedstawicieli zarz¹du.');
+
+
+
+
+
+
+
+1 => Szkolenie z zielonej taktyki 12-13.04.'14
+2 => Szkolenie powietrzno-desantowe 9-11.05.2014
+3 => Szkolenie unitarne - cz. terenowa 7 VI 2014
+4 => Szkolenie unitarne - cz. bojowa 8 VI 2014
+5 => Szkolenie unitarne - cz. fina³owa z przysiêg¹ wojskow¹ 21 VI 2014

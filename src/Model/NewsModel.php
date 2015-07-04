@@ -60,11 +60,11 @@ class NewsModel
      */
     public function getLast()
     {
-        $query = 'SELECT kla_posts.id, title, content, date, author, name as photo, post_id, description
+        $query = 'SELECT distinct(kla_posts.id), title, content, date, author, name as photo, post_id, description
             FROM kla_posts 
             LEFT JOIN kla_photos ON kla_posts.id = kla_photos.post_id
-            ORDER BY id DESC LIMIT 4';
-        $result = $this->db->fetchAssoc($query);
+            ORDER BY id DESC LIMIT 2';
+        $result = $this->db->fetchAll($query);
         return !$result ? array() : $result;
     }
 

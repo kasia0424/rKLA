@@ -14,7 +14,7 @@
         {%  if photos|length > 0 %}
             {% for photo in photos %}
                 <div>
-                    <img class="lightbox_trigger" src="{{ app.request.basepath }}/media/post/{{ photo.name }}.jpg" alt="zdjęcie"/>
+                    <img class="lightbox_trigger" id="{{ photo.id }}" src="{{ app.request.basepath }}/media/post/{{ photo.name }}.jpg" alt="zdjęcie"/>
                     <p class="hidden"> {{ photo.description }}</p>
                 </div>
             {% endfor %}

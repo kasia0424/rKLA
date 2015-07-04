@@ -54,7 +54,7 @@ class EventsController implements ControllerProviderInterface
     {
         $eventsModel = new EventsModel($app);
         $this->view['events'] = $eventsModel->getAll();
-        var_dump($this->view['events']);
+        // var_dump($this->view['events']);
         return $app['twig']->render('events.twig', $this->view);
     }
 

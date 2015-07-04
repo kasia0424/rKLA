@@ -1,0 +1,141 @@
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie wspólne z N.E.S.T. z zakresu terenoznawstwa', 'Album przedstawia zdjêcia ze szkolenia z dn. 13 wrzeœnia 2014 r., które odby³o siê w podkrakowskich lasach. W szkoleniu udzia³ wziêli równie¿ nasi koledzy z grupy taktycznej N.E.S.T. Na pewno nie bêdzie to ostatnie szkolenie, gdy¿ ze wspó³pracy wynika wiele dobrych wniosków i efektów. Pogoda dopisa³a, a szkolenie wiele nauczy³o tych, którzy uczestniczyli.', '2014-09-13', 'Piotr Wilczyñski');
+
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10616042_350019988491223_2855489099913714482_n', '6', 'Po dojechaniu na miejsce i zbiórce, przemaszerowano do jednej z podkrakowskich dolinek. W trakcie przemarszu æwiczono szyki i taktykê rozpoznania.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10703964_350019875157901_2633180842818902617_n', '6', 'W trakcie wêdrówki na miejsce szkolenia, powtórka z zielonej taktyki. Na zdjêciu legioniœci zabezpieczaj¹ wyjœcie na teren otwarty.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10612962_350019945157894_8876025181729215545_n', '6', 'Na miejscu szkolenia rozpoczêto od podstaw, czyli wyznaczania pó³nocy, korzystania z kompasu i busoli itp.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10646764_350020158491206_594998656207688354_n', '6', 'Do zadañ nale¿a³o szacowanie czasu planowanej trasy przemarszu.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10454304_350020255157863_1349936758598717271_n', '6', 'Po czêœci teoretycznej nast¹pi³a zbiórka, na której przedstawiono uczestnikom warunki zadania sprawdzaj¹cego. A by³o nim wykonanie w warunkach bojowych szkicu trasy biegn¹cej przez w¹wóz, gdzie trzeba by³o zaplanowaæ zasadzkê.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10704034_350019865157902_6191237909685016071_n', '6', 'W trakcie marszu powrotnego wprowadzono parê elementów musztry, oraz dalsze uwagi, u¿yteczne szczególnie dla nowych cz³onków naszych organizacji.');
+
+
+
+
+
+
+
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie z survivalu stosowanego w jednostkach specjalnych', 'Fotorelacja przedstawia zdjêcia ze szkolenia, które odby³o siê na Pustyni B³êdowskiej w dniach 3-5 paŸdziernika 2014 r. Uczestniczy³o 22 osób. By³o to jedne z najtrudniejszych szkoleñ, ale nikt nie wróci³ "na tarczy".', '2014-10-03', 'Piotr Wilczyñski');
+
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10703591_356885681137987_5221931769452606542_n', '7', '3 paŸdziernika przybyliœmy na Pustyniê B³êdowsk¹, w jej zalesion¹ nadrzeczn¹ czêœæ. Poniewa¿ dzieñ siê koñczy³ rozpoczêliœmy od æwiczeñ z budowy schronieñ z materia³ów terenowych i organizacji ¿ycia w obrêbie schronienia. Uczestnicy pracowali przy tym parami, w pewnym oddaleniu jedni od drugich.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10376933_356885711137984_4283276862366294900_n', '7', 'Za jedno z najlepszych schronieñ uznano to zaprojektowane przez Krzysztofa i Sebastiana.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10155651_356885801137975_7030592063673332642_n', '7', 'Nie zawsze co do kierunku marszu zdania by³y jednolite.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10351743_356886104471278_404863696831597810_n', '7', 'Drugi dzieñ szkolenia rozpocz¹³ siê od wprowadzenia do survivalu (geneza, psychologia przetrwania). Przedstawione na zdjêciu miejsce by³o sal¹ wyk³adow¹.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10580176_356885821137973_898727558141023554_n', '7', 'Ostatni dzieñ polega³ na orientacji w terenie. Do wykonania by³ oko³o 15-kilometrowy marsz za pomoc¹ kompasu i mapy.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('1461039_356885721137983_6598293234834855047_n', '7', 'Zakoñczenie marszu zakoñczy³o siê na wzniesieniu Czubatka, na którym odby³o siê wrêczenie certyfikatów.');
+
+
+
+
+
+
+
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie z walk ulicznych', 'Walki uliczne, w tym elementy czarnej taktyki i walki wrêcz, by³y tematem sobotnich æwiczeñ na zajêciach zorganizowanych na terenie poligonu MIêkinia pod Krakowem, gdzie stoj¹ dawne budynki przemys³owe. Pogoda nie rozpieszcza³a, ale ciep³o by³o wszystkim, gdy¿ æwiczenia przebiega³y dynamicznie. Szkolenie prowadzili na zlecenie komendanta dwaj specjaliœci. Pierwszy to cz³onek si³ specjalnych, a drugi to weteran oddzia³ów antyterrorystycznych policji. W szkoleniu wzi¹³ udzia³ 16-osobowy oddzia³ legionistów i kandydatów do KLA.', '2014-11-15', 'Piotr Wilczyñski');
+
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10734235_377638069062748_6622061442508341631_n', '8', 'Zbiórka przed rozpoczêciem o 7:30 by³a doœæ senna... Legioniœci nie spodziewali siê, jak¹ akcja nastêpuj¹ca przyjmie dynamikê.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10428478_377638062396082_8765286355549852501_n', '8', 'Rozpoczêto po rozgrzewce od æwiczeñ z walki wrêcz. Na pocz¹tek legioniœci zostali poddani instrukta¿owi z zakresu zak³adania przeciwnikowi ró¿nych rodzajów dŸwigni. Æwiczyli wzajemnie na sobie. Na zdjêciu æwiczenie dŸwigni nadgarstkowej.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10676209_377638115729410_2912903069240111254_n', '8', 'Kolejnym etapem by³a nauka kajdankowania.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10686804_377638195729402_5366646781541837904_n', '8', 'Nie pominiêto tak¿e symulacji sytuacji, gdyby zaatakowano legionistê z broni¹ paln¹. W tej sytuacji, uczestnicy z ofiar, nauczyli siê szybko zdobywaæ broñ przeciwnika odwracaj¹c sytuacjê.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('1781871_377638229062732_2161794901131031799_n', '8', 'Æwiczenia z walki wrêcz uzupe³ni³o szkolenie z technik pos³ugiwania siê policyjn¹ pa³k¹ i innymi przed³u¿eniami rêki, które mo¿na zastosowaæ do obrony.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10525901_377638049062750_767706493539637718_n', '8', 'Na zakoñczenie æwiczono wszystko w praktyce, w³¹cznie z u¿yciem materia³ów pirotechnicznych. A potem by³o ognisko, na którym dyskutowano przy kie³baskach ró¿ne tematy zwi¹zane z czarn¹ taktyk¹, jak zwalczanie wrogich si³ mobilnych, dronów i u¿ywanie sprzêtu p-panc. Wniosek tylko jeden - wiêcej takich szkoleñ.');
+
+
+
+
+
+
+
+
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie unitarne 2015 - I dzieñ', 'Popo³udniem nasi legioniœci rozpoczêli pierwszy etap szkolenia unitarnego. Odby³o siê ono na strzelnicy wojskowej Pasternik w Krakowie, gdzie pierwsze godziny poœwiêcone by³y szkoleniu ze strzelania dynamicznego. Po strzelaniu legioniœci otrzymali wspó³rzêdne i rozpocz¹³ siê test z nawigacji l¹dowej. Do 5:30 nastepnego dnia musieli dotrzeæ dowolnymi srodkami we wskazane przez wspó³rzêdne miejsce, gdzie odbywaæ siê mia³y nastêpne dni szkolenia.', '2015-04-30', 'Piotr Wilczyñski');
+
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11205127_451780918315129_3619502430463042219_n', '9', 'Pierwszym etapem szkolenia unitarnego by³y zajêcia ze strzelania dynamicznego. Prowadzi³ je nasz komendant.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11174780_451780924981795_6380206338351558706_n', '9', 'Najpierw wszystkie czynnoœci dynamicznego strzelania ka¿dy musia³ przeæwiczyæ "na sucho".');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11109194_451781021648452_5159396870036616584_n', '9', 'Strzelanie dynamiczne po³¹czone by³o z æwiczeniem postaw strzeleckich. Æwiczenie rozpoczyna³o siê z pozycji le¿¹cej.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11205080_451781024981785_5553712073596745650_n', '9', 'Nastêpnie po pokonaniu pewnego odcinka, trzeba by³o wyjrzeæ zza œciany i strzelaæ z pozycji klêcz¹cej.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11218708_451781031648451_1891986066050732540_n', '9', 'A potem podbiec i dobiæ tarcze z postawy stoj¹cej.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11066537_451781078315113_6373127218299733807_n', '9', 'Szkolenie odbywa³o siê indywidualnie, gdy jeden legionista strzela³ pod kontrol¹ komendanta, reszta obserwowa³a, uczy³a siê i kibicowa³a.');
+
+
+
+
+
+
+
+//posty
+
+INSERT INTO `kla_posts` (`title`, `content`, `date`, `author`)
+VALUES ('Szkolenie Unitarne 2015 - II dzieñ', 'Wszystkim piêciu dru¿ynom uda³o siê dotrzeæ na miejsce, co oznacza³o zaliczenie z testu nawigacji zadanego dnia poprzedniego. Drugi dzieñ rozpocz¹³ siê od szkolenia z walki bez broni i samoobrony. Szkolenie to zakoñczy³ tradycyjny wewnêtrzny turniej zapaœniczy KLA. Drug¹ czêœæ dnia poœwiêcono musztrze, terenoznawstwu oraz wprowadzeniu do taktyki zielonej. Dzieñ zakoñczy³o ognisko z wyk³adami teoretycznymi, a po nim nast¹pi³ nocny trening "rangersa", polegaj¹cy na pokonaniu trudnego terenu w niesprzyjaj¹cych warunkach.', '2015-05-01', 'Piotr Wilczyñski');
+
+
+
+//photos
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11046493_451782861648268_7047084044758420923_n', '10', 'Poranne æwiczenia z walki bez broni po doœæ wyczerpuj¹cej rozgrzewce. Æwiczono parami.');
+0
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11139411_451782871648267_4923896380898074913_n', '10', 'Zajêcia te prowadz¹cy poœwiêcili miêdzy innymi sztuce zak³adania dŸwigni.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11203113_451782908314930_4449132708541264872_n', '10', 'Uczono te¿ legionistów jak reagowaæ w sytuacji z wyci¹gniêtym no¿em lub inn¹ broni¹ bia³¹.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11188216_451782921648262_322696763670350677_n', '10', 'Æwiczenia z samoobrony zakoñczy³ wewnêtrzny turniej zapaœniczy. Oprócz rywalizacji sportowej, by³ on równie¿ fajn¹ rozrywk¹.');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('11002505_451782991648255_8327397321551368000_n', '10', 'Po zapasach i chwili na regeneracjê si³, st. leg. Gustaw W³odarczyk poprowadzi³ æwiczenia zwi¹zane z musztr¹ i zasadami oraz relacjami wspó³pracy z prze³o¿onymi i kolegami w formacjach o strukturze shierarchizowanej. Po tym æwiczeniu legioniœci uczyli siê jeszcze zasad sk³¹dania meldunków oraz wydawania rozkazów. ');
+
+INSERT INTO`kla_photos` (`name`, `post_id`, `description`) VALUES ('10982890_451782998314921_5811757387734278835_n', '10', 'Po obiedzie st. leg. Krzysztof Placek poprowadzi³ razem z komendantem wprowadzenie do zielonej taktyki.');
+
+
+
+
+
+
+6 => Szkolenie wspólne z N.E.S.T. z zakresu terenoznawstwa
+7 => Szkolenie z survivalu stosowanego w jednostkach specjalnych
+8 => Szkolenie z walk ulicznych 15 XI 2014 r.
+9 => Szkolenie unitarne 2015 - I dzieñ (30 IV)
+10 => Szkolenie Unitarne 2015 - II dzieñ (1 V)
+

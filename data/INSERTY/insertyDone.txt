@@ -1,0 +1,66 @@
+INSERT INTO `kla_events` (`name`, `date`, `type_id`) VALUES ('inauguracja sezonu – nocna taktyka', '2015-03-07', '1');
+
+INSERT INTO `kla_events` (`name`, `date`, `type_id`) VALUES ('szkolenie z profilowania kryminologicznego', '2015-03-08', '2');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`, `place`) VALUES ('warsztaty rusznikarskie', 'warsztaty z budowy, utrzymania i konserwacji broni', '2015-03-07', '3', '1');
+
+INSERT INTO `kla_events` (`name`, `date`, `type_id`) VALUES ('warsztaty pirotechniczne', '2015-03-21', '3');
+
+INSERT INTO `kla_events` (`name`, `date`, `type_id`) VALUES ('warsztaty ³uczniczo-kusznicze', '2015-03-28', '3');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('Islam we wspó³czesnym œwiecie', 'bezp³atna konferencja Polskiego Towarzystwa Geopolitycznego', '2015-03-29', '4');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('mini selekcja do jednostek specjalnych', 'z du¿o obni¿onymi wymogami, warto siê sprawdziæ', '2015-04-04', '1');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`, `place`) VALUES ('szkolenie biznesowo-kadrowe dla cz³onków KLA', 'trwa dwa dni', '2015-04-11', '2', '2');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('szkolenie strzeleckie stacjonarne', 'I i II etap', '2015-04-19', '2');
+
+INSERT INTO `kla_events` (`name`, `date`, `type_id`) VALUES ('podstawy ratownictwa taktycznego', '2015-04-25', '2');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('æwiczenia z zielonej taktyki', 'trwaj¹ dwa dni', '2015-04-25', '1');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('szkolenie unitarne', 'obowi¹zkowe dla wszystkich cz³onków jednostki, trwa trzy dni', '2015-05-01', '1');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('szkolenie powietrzno-desantowe', 'trwa dwa dni', '2015-05-09', '1');
+
+INSERT INTO `kla_events` (`name`, `date`, `type_id`) VALUES ('szkolenie z prowadzenia samochodów terenowych i quadów w warunkach trudnych', '2015-05-16', '1');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('æwiczenia walki broni¹ bia³¹', 'przy u¿yciu bagnetów i innych przedmiotów podrêcznych', '2015-05-23', '2');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('kurs nurkowy po³¹czony z taktyk¹ wodnodesantow¹', 'trwa dwa dni', '2015-06-06', '2');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('Combat Alert', 'trwa cztery dni', '2015-07-02', '1');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`, `place`) VALUES ('poligon wojsk pancernych', 'trwa dziewiêæ dni', '2015-08-01', '1', '3');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`, `place`) VALUES ('szkolenie survivalowe', 'trwa dwa dni', '2015-09-26', '1', '4');
+
+INSERT INTO `kla_events` (`name`, `date`, `type_id`) VALUES ('szkolenie z procedur obronnych OCOKA', '2015-10-17', '1');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('szkolenie strzeleckie', 'I i II etap', '2015-10-31', '2');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('szkolenie strzeleckie', 'strzelanie dynamiczne', '2015-11-01', '2');
+
+INSERT INTO `kla_events` (`name`, `date`, `type_id`) VALUES ('szkolenie wysokogórskie', '2015-11-11', '1');
+
+INSERT INTO `kla_events` (`name`, `info`, `date`, `type_id`) VALUES ('szkolenie czarnej taktyki', 'trwa dwa dni', '2015-11-14', '1');
+
+INSERT INTO `kla_events` (`name`, `date`, `type_id`) VALUES ('szkolenie ze s³u¿by wartowniczej', '2015-12-05', '1');
+
+
+
+type_id
+
+1 => poligon
+2 => szkolenie
+3 => warsztaty
+4 => konferencja
+
+
+place
+
+1 => LOK
+2 => Zakopane
+3 => ¯agañ
+4 => Pustynia B³êdowska

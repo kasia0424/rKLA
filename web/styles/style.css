@@ -3,7 +3,7 @@ body{
     background-color: lightgrey;
     margin: 0 auto;
     font-size: 14px;
-    font-family: Droid Sans, Verdana, sans-serif;
+    font-family: Source Sans Pro, Verdana, sans-serif;
 }
 .Tborder{
     border-top: 1px solid lightgrey;
@@ -194,14 +194,14 @@ input[name="mail"]{
     line-height: 30px;
 }
 .slide h1, .thumb h1{
-    padding-top: 1em;
+    padding-top: 0.5em;
     margin-left: 0;
     margin-top: -100px;
     margin-right: 0;
     margin-bottom: 0;
 }
 .slide p{
-    padding-left: 2em;
+    padding-left: 1.5em;
     padding-bottom: 10em;
     margin-top: 0px;
 }
@@ -256,7 +256,7 @@ aside{
     /*padding: 1em;*/
     width: 39%;
     height: 90%;
-    /* border-left: 1px solid lightgrey; */
+    border-left: 1px solid lightgrey;
     box-sizing: border-box;
 }
 aside article{
@@ -322,6 +322,9 @@ aside section:last-of-type{
     float left;
     display: inline;
 }
+.web p{
+    font-size: 0.9em;
+}
 /*.more{
     padding: 0.5em;
     border: 1px solid black;
@@ -347,7 +350,7 @@ footer{
 footer p{
     float: left;
     margin: 1em 3em;
-    line-height: 18px;
+    line-height: 16px;
 }
 footer img{
     float: right;
@@ -379,6 +382,10 @@ footer li a{
 .aktualnosci{
     padding-bottom: 2em;
     box-sizing: border-box;
+}
+.facebook{
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 .main .aktualnosci:first-of-type{
     padding-top: 0;
@@ -715,6 +722,7 @@ input{
 .dzialalnosc h1.button{
     min-width: 200px;
     text-align: center;
+    border-radius: 15px;
 }
 .dzialalnosc h2, .dzialalnosc h3, .dzialalnosc p{
     margin-bottom: 0;
@@ -739,6 +747,7 @@ input{
     padding-top: 1em;
     max-width: 800px;
     margin: 0 auto;
+    width: 90%;
 }
 .szkolenia tr{
     height: 30px;
@@ -750,9 +759,10 @@ input{
     font-size: 1.2em;
     background-color: lightgrey;/*#0092DF;*/
     border-bottom: 1px solid lightgrey;
+    padding: 10px;
 }
 .szkolenia th:first-child{
-    min-width: 80px;
+    min-width: 100px;
 }
 tr:nth-child(2n){
     background-color: #b1d8ff;
@@ -761,7 +771,7 @@ tr:nth-child(2n+1){
     background-color: #d8ebff;
 }
 td{
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -837,39 +847,76 @@ figcaption p{
 .historia{
     padding: 2em;
 }
+.historia p{
+    margin-bottom: 15px;
+}
+.historia section ul{
+    margin-top: -10px;
+}
+.historia section h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 article.timeline{
     /*margin-left: 22%;*/
     max-width: 700px;
     margin: 0 auto;
+    padding-top: 0;
 }
 .historia ul.timeline{
     /*width: 100%;*/
     /*float: left;*/
     display: block;
     margin: 0;
+    padding-top: 10px;
     /*border-top: 1px solid black;*/
     /*border-right: 1px solid black;*/
-    border: 1px solid black;
+    /* border: 1px solid black; */
     list-style-type: none;
-    padding: 0;
-    padding-left: 10px;
+    padding: 0 10px;
     height: 100%;
-    overflow: hidden;
+    min-height: 150px;
+    /* overflow: hidden; */
+    background: url('../media/layout/fala2rrozm.png') no-repeat;
+    background-size: 895px 115px;
+    /* -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); */
 }
 .historia ul.timeline li{
     /*height: 100px;*/
-    width: 24%;
+    /* width: 150px; */
+    width: 20%;
+    text-align: center;
     box-sizing: border-box;
     display: inline-block;
     margin: 0;
-    font-size: 1.75em;
-    padding: 2em;
+    margin-left: 15px;
+    font-size: 1.5em;
+    padding: 1em;
+    border-radius: 30px;
+    border: 2px solid #5D7BAF;
+    margin-top: 25px;
     /*padding-left: 10px;*/
-}
-.historia ul:first-child li:hover{
-    background-color: #0092DF;
-    font-weight: bold;
     cursor: pointer;
+}
+.historia ul:first-child li{
+    background-color: #C3D2EB;/*#0092DF;*/
+    font-weight: bold;
+    /* margin-left: 15px; */
+}
+/* .historia ul:first-child li:hover{
+    margin-left: 5px;
+    width: 
+} */
+.historia ul:first-child li.first{
+    margin-left: 30px;
+}
+.historia ul:first-child li.third{
+    /* margin-left: 45px; */
+}
+.historia ul.timeline li:last-child{
+    /* margin-left: 100px; */
 }
 section.shown{
     display: block;
@@ -885,7 +932,7 @@ section.shown{
     margin: 3px;
 }
 .highlighted{
-    background-color: #b1d8ff;
+    background-color: #b1d8ff!important;
 }
 
 
@@ -953,15 +1000,195 @@ section.shown{
 .quiz ol>li{
     font-size: 1.2em;
 }
-.quiz p{
+/* .quiz p{
     clear: both;
-}
+} */
 button.quiz{
     margin: 2em;
     display: block;
     float: right;
 }
-
+.quiz ul{
+    list-style-type: none;
+}
+//
+#main-quiz-holder { 
+    margin: 0 auto; 
+    position: relative;background: #FCFCFC; 
+    border:1px solid #dedede;
+     border-radius: 2px; 
+     position: relative; 
+     width: 600px; 
+} 
+#main-quiz-holder a { 
+    text-decoration: none; 
+} 
+#intro-container { 
+    width: 550px;
+    /* text-align: center;  */
+} 
+#intro-container h1{ 
+    margin-bottom: 0.5em;
+}
+.questionContainer { 
+    width: 560px; 
+     min-height: 400px; 
+    padding: 20px; 
+     overflow: auto; 
+     margin: auto; 
+} 
+.questionContainer .question, h2.qTitle { 
+    margin: 10px 0 20px 0; 
+     font-size: 26px; 
+     font-weight: normal; 
+} 
+h2.qTitle { 
+    font-size: 32px; 
+    margin-top: 30px; 
+} 
+.questionContainer ul.answers { 
+    margin: 0px; 
+    padding: 5px; 
+     list-style: none; 
+} 
+.questionContainer ul.answers li { 
+    padding: 5px 50px; 
+    margin: 12px 0; 
+    color: #4c4c4c; 
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px; 
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3); 
+    background: #f6f6f6; 
+    border: 1px solid #a1a1a1;  
+    cursor: pointer;    
+} 
+.questionContainer ul.answers li.selected { 
+    background: #6fb2e5; 
+  } 
+.questionContainer .prev, .questionContainer .next { 
+    /* height: 19px; */
+    cursor: pointer;
+    padding: 5px 10px; 
+   font-size: 16px; 
+   padding: 5px 10px; 
+  color: #4c4c4c; 
+  border-radius: 4px; 
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3); 
+  background: #6fb2e5; 
+} 
+.questionContainer .next  { 
+  background: #77d125;
+} 
+#progressKeeper { 
+    width: 553px; 
+    min-height: 30px;
+    margin: 0px 12px; 
+    border-radius: 2px; 
+    border:1px solid #dedede; 
+    position: absolute; 
+    top: 205px; 
+     /* left: 150px;  */
+    left: 20%;
+    text-align: center;
+}
+#progress p{
+    padding: 2%;
+}
+#progress { 
+    width: 0; 
+    height: 100%; 
+    color: #4c4c4c; 
+    background: #B9C7F4; 
+}
+#results-container{
+    width: 100%;
+}
+#results-container p, #resultKeeper div{
+    width: 50%;
+    /* margin-right: 20px; */
+    box-sizing: border-box;
+    float: left;
+    min-height: 350px;
+    border: 1px solid lightgrey;
+    padding: 1em;
+    background-color: #f6f6f6;
+}
+#resultKeeper { 
+    margin: 10px; 
+    /* text-align: center;  */
+    overflow: auto; 
+} 
+#notice { 
+    position: absolute; 
+    bottom: 10px; 
+    left: 40%;
+    /* right: 100px;  */
+} 
+.questionContainer .prev { float: left;} 
+.questionContainer .next, .questionContainer.btnShowResult { float: right; } 
+.btnPrev { 
+    padding-left: 24px; 
+    background: url(img/back.png) left no-repeat; 
+} 
+.btnNext { 
+    padding-right: 24px; 
+    background: url(img/forward.png) right no-repeat; 
+} 
+.btnShowResult{ 
+    padding-left: 24px; 
+    background: url(img/confirm.png) left no-repeat; 
+} 
+.btnStart { 
+    display: block; 
+    margin: 40px auto 0 auto; 
+    background-color: #77d125;
+    padding: 3px;
+    text-align: center;
+} 
+.btnContainer { 
+    margin: 20px 0 30px 0; 
+    padding: 5px; 
+    min-height: 50px;
+} 
+/* .resultRow { 
+    width: 110px; 
+    margin: 10px 25px; 
+    float: left; 
+} 
+.correct, .wrong {     
+    height: 19px; cursor: pointer; padding: 5px 10px; 
+   font-size: 16px; 
+   padding: 5px 15px; 
+  color: #4c4c4c; 
+  border-radius: 4px; 
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3); 
+} 
+.correct {     
+  background: #b2d840;
+  border: 1px solid #5d8300; 
+}  */
+/* .wrong { 
+    background: #e84545; 
+  border: 1px solid #930000; 
+  color: #F1F1F1; 
+} 
+.correct span { 
+    padding: 0 20px; 
+    background: url(img/confirm.png) left no-repeat; 
+} 
+.wrong span { 
+    padding: 0 20px; 
+    background: url(img/delete.png) left no-repeat; 
+}  */
+/* #answer-key { 
+    text-align: center; 
+    width: 300px; 
+    padding: 15px; 
+    margin: 0 auto; 
+     clear: both; 
+     font-size: 16px; 
+} */
 
 
 

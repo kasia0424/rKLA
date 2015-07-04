@@ -59,6 +59,7 @@ class NewsController implements ControllerProviderInterface
 
         $newsModel = new NewsModel($app);
         $this->view['posts'] = $newsModel->getLast();
+        // var_dump($this->view['posts']);
 
         return $app['twig']->render('home.twig', $this->view);
     }
