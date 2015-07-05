@@ -133,7 +133,6 @@ function description(){
             $desc = $(this).find('p');
             console.log($desc);
             $desc.removeClass("hidden");
-            //$desc.addClass("shown");
         },
         function(){ //when mouse leaves
             $desc = $(this).find('p');
@@ -189,7 +188,9 @@ function lightbox (){
     });
 // function galleryNext (){
      $(document).on( "click", "#lightbox img.next", function() {
+        console.log("HI");
         $src = $('#photo img').attr('src');
+        console.log($src);
         $currentPhoto = $('img[src="'+$src+'"]');//.find('img[src$="'+$src+'"]');
         console.log($currentPhoto);
         $currentPhoto.addClass('seen');
@@ -549,7 +550,7 @@ function menuUnderline (){
         var site = pathArray[pathArray.length -1];
     }
     $('#'+site).css("background-color", "white");
-    //$('#'+site+'>a').css("color", "black");
+    $('#'+site+'>a').css("color", "black");
 }
 
 $(document).resize(function(){

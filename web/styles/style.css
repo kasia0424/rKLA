@@ -73,8 +73,8 @@ header .soon p:first-line{
 header .soon {
     padding-top: 0px;
     margin-top: 10px;
-    background-color: #ECF0F1;
-    border: 2px solid #0092DF;
+    /* background-color: #ECF0F1; */
+    /* border: 2px solid #0092DF; */
 }
 .soon img{
     height: 40px;
@@ -103,21 +103,25 @@ nav.menu > ul{
     list-style-type: none;
     padding: 0.5em 0.5em;
     margin: 1em auto;
+    /* width: 90%; */
+    width: 85%;
 }
 .menu li{
     display: inline;
-    margin: 1px;
-    padding: 0.5em 0.25em;
+    margin: 0px;
+    padding: 0.5em 0.5em;
     text-transform: uppercase;
     border-right: 1px solid lightgrey;
-    padding-right: 10px;
+    /* border-left: 1px solid lightgrey; */
+    /* padding-right: 10px; */
+    min-width: 67px;
 }
 .menu li:last-child{
     border: 0;
 }
-.menu li:first-child{
+/* .menu li:first-child{
     padding-left: 15px;
-}
+} */
 .menu li a{
     text-decoration: none;
     color: #006ddf;/*#0092DF;*/
@@ -256,7 +260,7 @@ aside{
     /*padding: 1em;*/
     width: 39%;
     height: 90%;
-    border-left: 1px solid lightgrey;
+    /* border-left: 1px solid lightgrey; */
     box-sizing: border-box;
 }
 aside article{
@@ -370,6 +374,14 @@ footer li a{
 }*/
 
 
+/** o serwisie **/
+.serwis p{
+    margin-bottom: 1em
+}
+.serwis p.Tborder{
+    padding-top: 1em;
+}
+
 
 /* main content */
 .main{
@@ -413,6 +425,12 @@ p{
 }
 h1{
     margin: 2px;
+}
+.content h1{
+    margin-bottom: 1em;
+}
+section.main h1{
+    margin-bottom: 0em;
 }
 .more{
     display: inline;
@@ -697,11 +715,11 @@ input{
 
 
 /* dzialalnosc page */
-.dzialalnosc article div:first-of-type{
+/* .dzialalnosc article div:first-of-type{
     margin-top: 0.5em;
     padding: 10px;
     max-width: 90%;
-}
+} */
 .dzialalnosc a{
     text-decoration: none;
     color: black;
@@ -724,7 +742,8 @@ input{
     text-align: center;
     border-radius: 15px;
 }
-.dzialalnosc h2, .dzialalnosc h3, .dzialalnosc p{
+/* .dzialalnosc h2 */
+.dzialalnosc h3, .dzialalnosc p{
     margin-bottom: 0;
 }
 .dzialalnosc h3{
@@ -735,6 +754,8 @@ input{
 .dzialalnosc article.schemat{
     padding: 1em;
     padding-bottom: 2em;
+    margin: 0 auto;
+    width: 90%;
 }
 .dzialalnosc div.schemat{
     display: inline-block;
@@ -742,7 +763,7 @@ input{
 
 
 
-/** szkolenia page **/
+/** wydarzenia page **/
 .szkolenia table{
     padding-top: 1em;
     max-width: 800px;
@@ -773,6 +794,37 @@ tr:nth-child(2n+1){
 td{
     padding: 10px;
     text-align: center;
+}
+td a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+/** wydarzenia single **/
+.wydarzenie{
+    padding-bottom: 2.5em;
+}
+.wydarzenie .none{
+    font-style: italic;
+}
+.wydarzenie h1:first-letter{
+    text-transform: uppercase;
+}
+.wydarzenie section{
+    width: 35%;
+    min-height: 75px;
+    box-sizing: border-box;
+    float: left;
+    border-left: 1px solid lightgrey;
+    padding: 1em;
+}
+.wydarzenie section:first-of-type{
+    margin: 0;
+    margin-left: 5%;
+}
+.wydarzenie h3{
+    margin: 0;
 }
 
 
@@ -928,7 +980,7 @@ section.shown{
     display: block;
 }
 .shown h2{
-    padding: 1em 0 2px 0;
+    padding: 1em 0 10px 0;
     margin: 3px;
 }
 .highlighted{
@@ -939,6 +991,11 @@ section.shown{
 
 /** galeria page **/
 .galeria{
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+.galeria article{
+    width: 80%;
     margin: 0 auto;
 }
 .galeria img{
@@ -960,7 +1017,7 @@ section.shown{
 }
 #lightbox {
     position:fixed; /* keeps the lightbox window in the current viewport */
-    top: 10px; 
+    top: 0px; 
     left:0; 
     width:100%; 
     height:100%; 

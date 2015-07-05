@@ -126,8 +126,4 @@ class NewsController implements ControllerProviderInterface
             // )
         // );
     }
-    
-    
-    
-    
 }

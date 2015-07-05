@@ -48,48 +48,6 @@ $app->register(
        ),
    )
 );
- // $app->register(new Silex\Provider\SecurityServiceProvider(), array(
-     // 'security.firewalls' => array(
-         // 'admin' => array(
-             // 'pattern' => '^.*$',
-             // 'form' => array(
-                 // 'login_path' => 'auth_login',
-                 // 'check_path' => 'user_login_check',
-                 // 'default_target_path' => '/ads/',
-                 // 'username_parameter' => 'loginForm[login]',
-                 // 'password_parameter' => 'loginForm[password]',
-             // ),
-             // 'logout' => true,
-             // 'anonymous' => true,
-             // 'logout' => array('logout_path' => 'auth_logout'),
-             // 'users' => $app->share(function () use ($app) {
-                     // return new Provider\UserProvider($app);
-                 // }),
-         // ),
-     // ),
-     // 'security.access_rules' => array(
-         // array('^/ads/$', 'IS_AUTHENTICATED_ANONYMOUSLY'),
-         // array('^/categories/$', 'IS_AUTHENTICATED_ANONYMOUSLY'),
-         // array('^/auth/.+$', 'IS_AUTHENTICATED_ANONYMOUSLY'),
-         // array('^/user/add.$', 'IS_AUTHENTICATED_ANONYMOUSLY'),
-         // array('^/ads/view.+$', 'IS_AUTHENTICATED_ANONYMOUSLY'),
-         // array('^/categories/view.+$', 'IS_AUTHENTICATED_ANONYMOUSLY'),
-         // array('^/ads/delete/.*$', 'ROLE_USER'),
-         // array('^/ads/.*$', 'ROLE_USER'),
-         // array('^/user/edit.*$', 'ROLE_USER'),
-         // array('^/user/delete.*$', 'ROLE_USER'),
-         // array('^/user/view/.*$', 'ROLE_USER'),
-         // array('^/user/number/.*$', 'ROLE_USER'),
-         // array('^/user/*$', 'ROLE_USER'),
-         // array('^/photos/.*$', 'ROLE_USER'),
-         // array('^/photos.*$', 'ROLE_USER'),
-         // array('^/.+$', 'ROLE_ADMIN')
-     // ),
-     // 'security.role_hierarchy' => array(
-         // 'ROLE_ADMIN' => array('ROLE_USER', 'ROLE_ANONYMUS'),
-         // 'ROLE_USER' => array('ROLE_ANONYMUS'),
-     // ),
- // ));
 
 
 //obs³uga b³êdów
@@ -100,25 +58,25 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpKernel\Exception\FatalErrorException;
 
-$app->error(
-    function (\Exception $e, $code) use ($app) {
-        if ($code == 404) {
-            return new Response(
-                $app['twig']->render('errors/404.twig'), 404
-            );
-        }
-    }
-);
+// $app->error(
+    // function (\Exception $e, $code) use ($app) {
+        // if ($code == 404) {
+            // return new Response(
+                // $app['twig']->render('errors/404.twig'), 404
+            // );
+        // }
+    // }
+// );
 
-$app->error(
-    function (\Exception $e, $code) use ($app) {
-        if ($code == 403) {
-            return new Response(
-                $app['twig']->render('errors/403.twig'), 403
-            );
-        }
-    }
-);
+// $app->error(
+    // function (\Exception $e, $code) use ($app) {
+        // if ($code == 403) {
+            // return new Response(
+                // $app['twig']->render('errors/403.twig'), 403
+            // );
+        // }
+    // }
+// );
 // $app->error(
     // function (\Exception $e, $code) use ($app) {
         // if ($code == 500) {
@@ -189,12 +147,15 @@ $app->get('/zalozyciele', function ()  use($app) {
 $app->get('/historia', function ()  use($app) {
     return $app['twig']->render('history.twig');
 })->bind('/historia/');
-$app->mount('/quiz/', new Controller\QuizController());
+$app->get('/quiz/', function ()  use($app) {
+    return $app['twig']->render('quiz.twig');
+})->bind('/quiz/');
+$app->get('/o-serwisie/', function ()  use($app) {
+    return $app['twig']->render('o_serwisie.twig');
+})->bind('/o-serwisie/');
 
+//$app->mount('/galeria/', new Controller\PhotosController());
 
-$app->mount('/galeria/', new Controller\PhotosController());
-$app->mount('/auth/', new Controller\AuthController());
-// $app->mount('/user/', new Controller\UsersController());
 
 
 $app->run();

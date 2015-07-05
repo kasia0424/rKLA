@@ -38,8 +38,6 @@
                 <div class="dot" id="2"> &bull;</div>
                 <div class="dot" id="3"> &bull;</div>
                 <div class="dot" id="4"> &bull;</div>
-                {#<img src="{{ app.request.basepath }}/media/layout/dot-icons.png" alt="black dots" id="dots" />
-                #}
             </div><!-- slide nav buttons -->
 
             <div class="clear"></div>
@@ -47,90 +45,69 @@
 
 
         <div class="content Tborder">
-            <section class="main Rborder ">
+            <section class="main">
                 <h1> Aktualności </h1>
                 
                 <section class="Bborder facebook">
-                    <div class="fb-page" data-href="https://www.facebook.com/legiaakademickahomepage" data-hide-cover="true" data-width="550" data-height="580" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true" data-hide-cta="true">
+                    <div class="fb-post" data-href="https://www.facebook.com/media/set/?set=a.457583541068200.1073741881.168740273285863&amp;type=3" data-width="500">
                         <div class="fb-xfbml-parse-ignore">
-                            <blockquote cite="https://www.facebook.com/legiaakademickahomepage">
-                                <a href="https://www.facebook.com/legiaakademickahomepage">Legia Akademicka</a>
+                            <blockquote cite="https://www.facebook.com/media/set/?set=a.457583541068200.1073741881.168740273285863&amp;type=3">
+                                <p>
+                                    Fotorelacja z przeprowadzonego kursu spadochronowego, w kt&#xf3;rym kolejni legioni&#x15b;ci stali si&#x119; dumnymi posiadaczami odznaki desantu (SSSO).
+                                </p>
+                                Posted by <a href="https://www.facebook.com/legiaakademickahomepage">Legia Akademicka</a>
+                                on&nbsp;<a href="https://www.facebook.com/media/set/?set=a.457583541068200.1073741881.168740273285863&amp;type=3">20 maja 2015</a>
                             </blockquote>
                         </div>
                     </div>
                 </section>
-                
+
                 <section class="Bborder facebook">
-<script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/media/set/?set=a.457583541068200.1073741881.168740273285863&amp;type=3" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/media/set/?set=a.457583541068200.1073741881.168740273285863&amp;type=3"><p>Fotorelacja z przeprowadzonego kursu spadochronowego, w kt&#xf3;rym kolejni legioni&#x15b;ci stali si&#x119; dumnymi posiadaczami odznaki desantu (SSSO).</p>Posted by <a href="https://www.facebook.com/legiaakademickahomepage">Legia Akademicka</a> on&nbsp;<a href="https://www.facebook.com/media/set/?set=a.457583541068200.1073741881.168740273285863&amp;type=3">20 maja 2015</a></blockquote></div></div>
+                <div class="fb-post" data-href="https://www.facebook.com/media/set/?set=a.451780818315139.1073741877.168740273285863&amp;type=3" data-width="500">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote cite="https://www.facebook.com/media/set/?set=a.451780818315139.1073741877.168740273285863&amp;type=3">
+                            <p>Popo&#x142;udniem nasi legioni&#x15b;ci rozpocz&#x119;li pierwszy etap szkolenia unitarnego. Odby&#x142;o si&#x119; ono na strzelnicy wojskowej...</p>
+                            Posted by <a href="https://www.facebook.com/legiaakademickahomepage">Legia Akademicka</a>
+                            on&nbsp;<a href="https://www.facebook.com/media/set/?set=a.451780818315139.1073741877.168740273285863&amp;type=3">4 maja 2015</a>
+                        </blockquote>
+                    </div>
+                </div>
                 </section>
-                
-                {%  if posts|length > 0 %}
-                    {% for post in posts %}
-                    <article class="aktualnosci Bborder">
-                        <a href="{{ url('/home/post', {'id': post.id} ) }}" class="post">
-                            <img class="border" src="{{ app.request.basepath }}/media/post/{{ post.photo }}.jpg" alt="zdjęcie miasta z lotu ptaka" />
-                            <p>{{ post.date }}</p>
-                            <h1>{{ post.title }}</h1>
-                            <p class="float_text">
-                                {{ post.content }}
-                            </p>
-                            <div class="clear"></div>
-                        </a>
-                    </article>
-                    {% endfor %}
-                {% else %}
-                    <p>
-                        Niedługo wrzucimy relacje z wydarzeń.
-                    </p>
-                {% endif %}
-                    
-                    
-                {#<article class="aktualnosci Bborder">
-                    <a href="{{ url('/home/post/1') }}" class="post">
-                        <img class="border" src="{{ app.request.basepath }}/media/post/11094290_451791754980712_1816145686517115286_n.jpg" alt="zdjęcie miasta z lotu ptaka" />
-                        <p>3.05.2015</p>
-                        <h1>Szkolenie unitare</h1>
-                        <p class="float_text">
-                            Ostatni dzień szkolenia unitarnego w tym roku był bardzo ciepły, ale nie dla wszystkich. Legioniści rozpoczęli zajęcia o 3 w nocy, gdy na polach lśnił w pełni księżyca śnieg. Po ćwiczeniu gotowości bojowej, która unaoczniła uczestnikom ich braki, kontynuowano szkolenie umiejętności bojowych: posługiwania się granatami ręcznymi, wykonywania okopów i korzystania z różnego innego sprzętu. Po szkoleniach odbyła się uroczysta przysięga wojskowa dla rekrutów poprzedzona udziałem we mszy świętej za ojczyznę.
+
+                <section class="facebook">
+                <div class="fb-post" data-href="https://www.facebook.com/media/set/?set=a.425997724226782.1073741873.168740273285863&amp;type=3" data-width="500">
+                    <div class="fb-xfbml-parse-ignore">
+                        <blockquote cite="https://www.facebook.com/media/set/?set=a.425997724226782.1073741873.168740273285863&amp;type=3">
+                            <p>Niewielki oddzia&#x142; KLA &#x107;wiczy&#x142; wczorajszej nocy na krakowskim Zakrz&#xf3;wku dzia&#x142;ania nocne. Nie oby&#x142;o si&#x119; bez ofiar, wi&#x119;c zapraszamy do obejrzenia zdj&#x119;&#x107;.</p>
+                            Posted by <a href="https://www.facebook.com/legiaakademickahomepage">Legia Akademicka</a>
+                            on&nbsp;<a href="https://www.facebook.com/media/set/?set=a.425997724226782.1073741873.168740273285863&amp;type=3">7 marca 2015</a>
+                        </blockquote>
+                    </div>
+                </div>
+                </section>
+
+                {#
+                    {%  if posts|length > 0 %}
+                        {% for post in posts %}
+                        <article class="aktualnosci Bborder">
+                            <a href="{{ url('/home/post', {'id': post.id} ) }}" class="post">
+                                <img class="border" src="{{ app.request.basepath }}/media/post/{{ post.photo }}.jpg" alt="zdjęcie miasta z lotu ptaka" />
+                                <p>{{ post.date }}</p>
+                                <h1>{{ post.title }}</h1>
+                                <p class="float_text">
+                                    {{ post.content }}
+                                </p>
+                                <div class="clear"></div>
+                            </a>
+                        </article>
+                        {% endfor %}
+                    {% else %}
+                        <p>
+                            Niedługo wrzucimy relacje z wydarzeń.
                         </p>
-                        <div class="clear"></div>
-                    </a>
-                </article>
-                
+                    {% endif %}
+                #}
 
-                <article class="aktualnosci Bborder">
-                    <a href="wpis.html" class="post">
-                        <img class="border" src="{{ app.request.basepath }}/media/news/.jpg" alt="zdjęcie silnika lecącego samolotu" />
-                        <p>16.09.2014</p>
-                        <h1>Lorem ipsum dolor sit amet</h1>
-                        <p class="float_text">Lorem ipsum dolor sit amet text text text<br />
-                            text text text text<br/>
-                            text text text text text text text text
-                        
-                            <!-- <a href="#" class="more">Czytaj więcej</a> -->
-                        </p>
-                        <div class="clear"></div>
-                    </a>
-                </article>
-
-
-                <article class="aktualnosci Bborder">
-                    <a href="wpis.html" class="post">
-                        <img src="{{ app.request.basepath }}/media/news/.jpg" alt="zdjęcie silnika lecącego samolotu" />
-                        <p>16.09.2014</p>
-                        <h1>Lorem ipsum dolor sit amet</h1>
-                        <p class="float_text">Lorem ipsum dolor sit amet text text text<br />
-                            text text text text<br/>
-                            text text text text text text text text
-                        
-                            <!-- <a href="#" class="more">Czytaj więcej</a> -->
-                        </p>
-                        <div class="clear"></div>
-                    </a>
-                </article>#}
-
-
-                {#<a href="aktualnosci.html" class="big_button">Zobacz więcej</a>#}
             </section>
 
 

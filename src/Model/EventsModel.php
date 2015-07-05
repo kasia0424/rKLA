@@ -57,5 +57,23 @@ class EventsModel
         $result = $this->db->fetchAll($query);
         return !$result ? array() : $result;
     }
+
+
+    /**
+     * Gets event
+     *
+     * @access public
+     * @return array Result
+     */
+    public function getEvent($id)
+    {
+        $query = 'SELECT kla_events.id, kla_events.name, info, date, kla_types.name as type, kla_places.name as place
+            FROM kla_events 
+            LEFT JOIN kla_types ON kla_events.type_id = kla_types.id
+            LEFT JOIN kla_places On kla_events.place = kla_places.id
+            WHERE kla_events.id = ?';
+        $result = $this->db->fetchAssoc($query, array((int) $id));
+        return !$result ? array() : $result;
+    }
     
 }

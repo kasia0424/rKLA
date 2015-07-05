@@ -1,0 +1,37 @@
+{% extends 'layout.twig' %}
+
+{% block title %}Szkolenia{% endblock %}
+
+{% block content %}
+
+    <div class="clear"></div>
+</header><!-- header end -->
+
+
+<div class="content wydarzenie">
+    <article>
+        <h1> {{ event.name }} </h1>
+
+        <section class="left Rborder">
+            <p>
+                <strong>Data wydarzenia:</strong> {{ event.date }}<br/>
+                <strong>Typ:</strong> {{ event.type }} <br/>
+                {% if event.place != null %}
+                    <strong>Miejsce:</strong> {{ event.place }}
+                {% endif %}
+            </p>
+        </section>
+        <section class="left Rborder">
+            <h3> Dodatkowe informacje:</h3>
+        {% if event.info != null %}
+                <p> {{ event.info }}</p>
+            </section>
+        {% else %}
+                <p class="none"> Więcej informacji już niedługo.</p>
+            </section>
+        {% endif %}
+
+    </article>
+
+
+{% endblock %}

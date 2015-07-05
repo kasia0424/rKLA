@@ -23,9 +23,9 @@
             <tbody>
             {% for event in events %}
                 <tr>
-                    <td>{{ event.date|e }}</td>
-                    <td>{{ event.name|e }}</td>
-                    <td>{{ event.type|e }}</td>
+                    <td><a href="{{ url('/wydarzenia/', {'id': event.id} ) }}" class="event">{{ event.date|e }}</a></td>
+                    <td><a href="{{ url('/wydarzenia/', {'id': event.id} ) }}" class="event">{{ event.name|e }}</a></td>
+                    <td><a href="{{ url('/wydarzenia/', {'id': event.id} ) }}" class="event">{{ event.type|e }}</a></td>
                 </tr>
             {% endfor %}
                 {#<tr>
